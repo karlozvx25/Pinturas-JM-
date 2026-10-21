@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+.openai/
+*.log
+coverage/
+__pycache__/
+*.MOV
+*.mov
+*.wav
+*.mp3

@@ -1,0 +1,14 @@
+{
+  "name": "pinturas-jm-prototipo",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Prototipo funcional de operaci\u00f3n comercial y color de Pinturas JM, por SyborX",
+  "scripts": {
+    "start": "python3 -m http.server 8765 --directory dist",
+    "test": "node test.cjs && node test-atelier.cjs && node test-operations.cjs && node test-store.cjs",
+    "check": "node --check dist/atelier.js && node --check dist/operations.js && node --check dist/store.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
