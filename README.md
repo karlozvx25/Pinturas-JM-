@@ -135,17 +135,22 @@ npm test
 
 Son pruebas de lógica con un DOM simulado. No sustituyen pruebas de navegador, accesibilidad, rendimiento, concurrencia, equipos o seguridad. Las pruebas de las primeras capas no representan por sí solas la experiencia final; `store.js` aplica la capa más reciente.
 
+### Apariencia White / Dark
+
+El botón situado en la esquina superior derecha alterna entre modo White y Dark. La preferencia se conserva en este navegador y se mantiene al cambiar de perfil o sucursal. La vista artística del color conserva su escenario de contraste. `theme-init.js` restaura la preferencia antes de dibujar y `theme.js` gestiona el selector.
+
 ### Datos locales y reinicio
 
 | Clave de `localStorage` | Uso |
 |---|---|
 | `jm-demo-v1` | Escenario heredado del primer prototipo |
 | `jm-collections-v2` | Colecciones de color guardadas |
+| `pjm-theme` | Preferencia de apariencia `light` o `dark` |
 | `pjm-ops-v3` | Operación comercial, solicitudes y progreso de lecturas de la vista actual |
 
 No existe sincronización entre equipos, perfiles u orígenes. Abrir el sitio publicado y el servidor local crea almacenamientos distintos. Cambiar el selector de sucursal no crea un usuario autenticado.
 
-Para reiniciar la demo, elimina **sólo esas claves** desde las herramientas de almacenamiento del navegador y recarga. Esto descarta datos locales del prototipo. En una inicialización vacía, el frontend puede crear un traslado ficticio para demostrar recepción; ese comportamiento debe retirarse de producción.
+Para reiniciar la demo, elimina **sólo las claves de datos que quieras reiniciar** desde las herramientas de almacenamiento del navegador y recarga. `pjm-theme` sólo controla apariencia. Esto descarta datos locales del prototipo. En una inicialización vacía, el frontend puede crear un traslado ficticio para demostrar recepción; ese comportamiento debe retirarse de producción.
 
 ## 4. Usuarios y responsabilidades
 
@@ -459,7 +464,7 @@ El registro ampliado incluye alternativas, recomendación, preguntas y condició
 └── test*.cjs                       Pruebas por capa
 ```
 
-**Orden de carga obligatorio:** lógica inline de `index.html` → `atelier.js` → `operations.js` → JsBarcode → `store.js`. La última capa redefine navegación, vistas y validaciones anteriores. Las hojas de estilo siguen el mismo criterio de superposición.
+**Orden de carga obligatorio:** lógica inline de `index.html` → `atelier.js` → `operations.js` → JsBarcode → `store.js`. La última capa redefine navegación, vistas y validaciones anteriores. Además, `theme-init.js` se carga en la cabecera para restaurar apariencia y `theme.js` se carga después de `store.js` para añadir el botón; `theme.css` aplica la paleta clara. Las hojas de estilo siguen el mismo criterio de superposición.
 
 Esta organización permitió iterar el prototipo, pero **no es una arquitectura modular productiva**. Hay funciones y vistas heredadas que no deben considerarse requisitos vigentes sólo porque aparecen en el código. El alcance actual está determinado por la vista final de `store.js` y este manual.
 
