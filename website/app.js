@@ -146,9 +146,3 @@ if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion
   image.onerror=()=>{document.querySelector('.paint-panel').hidden=true};
   image.src='assets/hero-color.png';
 })();
-
-
-const quoteDialog=document.querySelector('#quote-dialog');
-document.querySelectorAll('[data-quote]').forEach(button=>button.addEventListener('click',()=>quoteDialog.showModal()));
-document.querySelectorAll('[data-close-quote]').forEach(button=>button.addEventListener('click',()=>quoteDialog.close()));
-quoteDialog.addEventListener('click',event=>{if(event.target===quoteDialog){const r=quoteDialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)quoteDialog.close()}});

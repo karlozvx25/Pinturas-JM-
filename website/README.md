@@ -75,7 +75,7 @@ Verificación: sintaxis JavaScript, trazo y desaparición visual en navegador, s
 La cabecera contiene dos accesos visibles en escritorio y móvil:
 
 - **Entrar al prototipo:** abre el prototipo operativo existente en otra pestaña, en `https://pinturas-jm-operacion.karlozvx.chatgpt.site/`. Respeta las condiciones de acceso que tenga ese sitio.
-- **Ver cotización:** abre un diálogo con acceso a la propuesta interactiva privada de SyborX. Se identifica como borrador para revisión y conserva los permisos propios de ese sitio. Puede cerrarse con el botón, Escape o clic fuera. El código de la web comercial no contiene importes ni el análisis financiero interno.
+- **Ver cotización:** abre directamente la propuesta interactiva de SyborX en una pestaña nueva, sin una ventana intermedia. Incluye la actualización de beneficios SaaS y conserva los permisos propios del sitio de la propuesta. El código de la web comercial no contiene importes ni el análisis financiero interno.
 
 La presentación se publica como un Site separado: `https://syborx-propuesta-pinturas-jm.karlozvx.chatgpt.site/`. No hay carga de documentos ni publicación automática desde el navegador.
 
