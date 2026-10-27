@@ -1,3 +1,5 @@
+> **Rama `pagina-web`:** nueva web comercial de Pinturas JM en [`website/`](website/README.md). Ejecuta `npm run web:start` para verla. La plataforma operativa y su manual se conservan debajo.
+
 # Pinturas JM · operación comercial y atelier de color
 
 Prototipo interactivo de **SyborX** para explorar la operación de **Pinturas JM S.A. de C.V.: 11 sucursales y un centro de distribución (CEDIS/PJM)**. Este repositorio entrega el frontend demostrativo y un manual de interpretación, operación y desarrollo para quienes construirán el sistema definitivo.

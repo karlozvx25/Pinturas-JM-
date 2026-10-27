@@ -6,7 +6,9 @@
   "scripts": {
     "start": "python3 -m http.server 8765 --directory dist",
     "test": "node test.cjs && node test-atelier.cjs && node test-operations.cjs && node test-store.cjs",
-    "check": "node --check dist/atelier.js && node --check dist/operations.js && node --check dist/store.js && node --check dist/theme-init.js && node --check dist/theme.js"
+    "check": "node --check dist/atelier.js && node --check dist/operations.js && node --check dist/store.js && node --check dist/theme-init.js && node --check dist/theme.js",
+    "web:start": "python3 -m http.server 8775 --directory website",
+    "web:check": "node --check website/app.js && node --check website/shop.js"
   },
   "engines": {
     "node": ">=20"
