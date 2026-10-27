@@ -106,8 +106,8 @@ Las interpretaciones se apoyan en el levantamiento; las políticas concretas, ex
 El frontend no necesita instalar paquetes ni compilarse. JsBarcode ya está incluido en `dist/vendor/`.
 
 ```bash
-git clone https://github.com/syborx-git/Pinturas-JM.git
-cd Pinturas-JM
+git clone https://github.com/karlozvx25/Pinturas-JM-.git
+cd Pinturas-JM-
 npm start
 ```
 
