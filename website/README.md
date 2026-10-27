@@ -135,3 +135,10 @@ Sintaxis de ambos archivos JavaScript, búsqueda, filtros, orden, paginación a 
 ## Legibilidad
 
 Revisión del 27 oct 2026: Arial en texto e interfaz; mínimo de 11 px para etiquetas, controles y texto auxiliar en todos los tamaños de pantalla. Se conservan títulos y texto principal de mayor tamaño.
+
+
+## Versión sincronizada · 27 octubre 2026
+
+La portada prioriza «Cotización formal y proyecto para Pinturas JM» con accesos grandes a cotización y prototipo. La propuesta incluye los 13 diagramas de arquitectura interactivos, el botón «Exportar a PDF» y el cierre de LEM CARLOS VAZQUEZ LEDEZMA, Director Comercial y Cofundador de SyborX.
+
+Para el equipo: editar la web en `website/`, la propuesta en `website/propuesta/` y el prototipo en `dist/` (su copia publicada está en `website/prototipo/`). GitHub Pages despliega `website/` desde `main`. Los botones existentes conservan sus enlaces a Sites; publicar cambios en GitHub no actualiza esos sitios independientes.

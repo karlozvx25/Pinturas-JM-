@@ -142,5 +142,11 @@ La participación beta permite conocer y evaluar funcionalidades en desarrollo y
 
 Esta versión es un borrador para revisión. La cotización final tendrá una vigencia propuesta de 30 días naturales desde su emisión. El inicio se acordará después de firmar contrato y anexo de alcance, recibir el anticipo y habilitar los accesos e insumos necesarios.
 
+Propuesta elaborada por el equipo comercial de SyborX, con el compromiso de convertir la visión de Pinturas JM en una solución que impulse su operación y acompañe su crecimiento.
+
+Atentamente,
+
+**LEM CARLOS VAZQUEZ LEDEZMA**  
+Director Comercial y Cofundador  
 **SyborX**  
 Estrategia empresarial y software a la medida.

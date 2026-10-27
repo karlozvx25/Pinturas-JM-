@@ -35,3 +35,23 @@
 
 /* Readability revision: Arial; UI text at least 11px, larger headings preserved. */
 body{font-family:Arial,Helvetica,sans-serif}button,input,textarea,select{font-family:Arial,Helvetica,sans-serif}
+
+/* Project presentation: primary access to proposal and prototype. */
+.hero{height:auto;min-height:max(850px,100svh);max-height:none;padding:200px 3.4% 175px}
+.hero-project{position:relative;z-index:2;max-width:1050px}
+.project-kicker{display:block;font-size:12px;letter-spacing:1.6px;color:#f3f0e4;margin-bottom:28px}
+.hero .hero-project h1{position:static;width:auto;font-size:clamp(45px,6.4vw,100px);line-height:1.02;letter-spacing:-.055em;left:auto;top:auto}
+.project-and{font-size:.62em;font-weight:500;letter-spacing:-.025em}
+.project-intro{max-width:580px;font-size:17px;line-height:1.6;color:#e7e6df;margin:25px 0 30px}
+.hero-project-actions{display:flex;gap:16px;max-width:900px}
+.hero-project-button{display:flex;align-items:center;justify-content:space-between;gap:25px;flex:1;padding:23px 26px;min-height:104px;border:1px solid #ffffff80;border-radius:3px;text-decoration:none;transition:transform .2s,background .2s;backdrop-filter:blur(15px)}
+.hero-project-button small{display:block;font-size:11px;letter-spacing:1.1px;margin-bottom:10px}
+.hero-project-button strong{font-size:20px;line-height:1.2;letter-spacing:-.5px}
+.hero-project-button b{font-size:30px;font-weight:400}
+.hero-project-button.primary{background:#ed4937;color:#fff;border-color:#ed4937}
+.hero-project-button.secondary{background:#141719d9;color:#fff}
+.hero-project-button:hover{transform:translateY(-4px);background:#b9382b}
+.hero-project-button:focus-visible{outline:3px solid #fff;outline-offset:5px}
+.hero-topline{display:none}
+.paint-panel{display:none}
+@media(max-width:700px){.hero{padding:190px 5% 160px;min-height:850px}.project-kicker{font-size:11px;line-height:1.6;max-width:280px;margin-bottom:24px}.hero .hero-project h1{font-size:clamp(34px,7.4vw,52px);line-height:1.08}.project-intro{font-size:15px;line-height:1.55;margin:23px 0}.hero-project-actions{flex-direction:column;gap:12px}.hero-project-button{padding:19px 21px;min-height:91px;flex:auto}.hero-project-button strong{font-size:19px}.hero-bottom{bottom:43px}.hero-bottom .round-link{display:none}}

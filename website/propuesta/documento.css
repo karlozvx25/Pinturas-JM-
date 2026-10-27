@@ -2,3 +2,5 @@
 
 /* Readability revision: Arial; UI text at least 11px, larger headings preserved. */
 body{font-family:Arial,Helvetica,sans-serif}button,input,textarea,select{font-family:Arial,Helvetica,sans-serif}
+
+.commercial-signoff{margin-top:55px;padding:30px 0 0;border-top:2px solid #c9a860;max-width:760px;break-inside:avoid;page-break-inside:avoid}.signoff-label{font-size:11px;letter-spacing:1.5px;color:#806229;font-weight:700;margin:0 0 16px}.signoff-message{max-width:680px}.signoff-courtesy{margin:28px 0 15px}.signoff-name{font-size:20px;font-weight:700;letter-spacing:.2px;line-height:1.4;margin:0 0 4px}.signoff-role{font-size:14px;margin:0}.signoff-brand{font-size:22px;font-weight:700;color:#806229;margin:12px 0 0}.signoff-tagline{font-size:12px;margin:0;color:#58624f}@media print{.commercial-signoff{margin-top:10mm;padding-top:6mm}.signoff-name{font-size:14px}.signoff-role{font-size:11px}.signoff-brand{font-size:16px}.signoff-tagline{font-size:11px}.signoff-courtesy{margin:6mm 0 3mm}}
