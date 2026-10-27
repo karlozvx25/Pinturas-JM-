@@ -78,3 +78,52 @@ La cabecera contiene dos accesos visibles en escritorio y móvil:
 - **Ver cotización:** abre un diálogo accesible con el estado «Documento pendiente». Puede cerrarse con el botón, Escape o clic fuera. No contiene importes, fechas de entrega ni un documento ficticio.
 
 Cuando se entregue la cotización final se sustituirá el contenido pendiente de `#quote-dialog` por su presentación y el acceso al documento aprobado. No hay carga de documentos ni publicación automática desde el navegador.
+
+
+## Pedidos en línea y carrito
+
+La nueva sección **02 / Pedir en línea** está entre Universo JM y Nuestras líneas. La navegación y las secciones posteriores se renumeraron. El carrito también tiene un acceso permanente en la cabecera.
+
+### Catálogo de demostración
+
+Incluye **64 productos genéricos en ocho categorías**, con presentaciones ilustrativas. No constituye un listado de productos confirmados de JM. Todos los códigos llevan el prefijo `DEMO-`; las ilustraciones SVG son originales y conceptuales, no fotografías de empaques ni marcas reales.
+
+| Categoría | Ejemplos | Presentaciones de ejemplo |
+| --- | --- | --- |
+| Pintura automotriz | Bases sólidas, metálicas, perladas; esmaltes; transparentes | 250 ml, 1 L, galón de 3.785 L |
+| Pintura arquitectónica | Vinílica, acrílica, satinada, impermeabilizante | 1 L, galón, cubeta de 19 L |
+| Madera e industrial | Barnices, laca, tintas, anticorrosivo | 1 L y galón |
+| Preparación | Masillas, plastes, fondos y primers | Peso o volumen, según producto |
+| Solventes y auxiliares | Thinners, reductores y limpieza | 1 L, galón y bidón de 5 L |
+| Brochas y rodillos | Cerdas naturales, sintéticas; felpas; minirrodillos | Medidas en pulgadas y paquetes |
+| Accesorios y abrasivos | Lijas, discos, cintas, vasos y coladores | Granos, medidas, piezas y paquetes |
+| Limpieza y protección | Estopas, trapos, paños, guantes y protección | Peso, piezas, pares y rollos |
+
+### Flujo de compra del prototipo
+
+1. Buscar por nombre, categoría, código o presentación. La búsqueda ignora acentos. Filtrar por categoría y ordenar por nombre.
+2. Elegir presentación y agregar. Se muestran 12 tarjetas inicialmente y se cargan 12 adicionales por acción.
+3. Abrir carrito, modificar cantidades de 1 a 999 o eliminar productos. Cada combinación de producto y presentación tiene su propia partida. Agregar la misma combinación incrementa su cantidad.
+4. Capturar nombre, contacto, modalidad de recolección o entrega, zona y notas opcionales.
+5. Preparar la solicitud y revisar el texto. Abrir el correo con el pedido o copiarlo para compartirlo manualmente. En pedidos extensos el correo incluye sólo el asunto y se indica copiar el detalle.
+
+**Alcance actual:** el carrito es funcional en el navegador, usa `localStorage` con validación de identificadores, presentaciones y cantidades. Si el almacenamiento está bloqueado funciona durante la visita. Los datos personales del formulario no se guardan en ese almacenamiento. Cambiar el carrito invalida la solicitud preparada para evitar enviar un detalle anterior.
+
+**Precios y operación:** se muestra «Por cotizar». No hay precios inventados, cobros, reservas de stock, folios reales, integración de inventarios ni envío automático. La solicitud queda pendiente de revisión por JM y no confirma una compra. Los selectores de entrega no prometen cobertura ni una sucursal específica.
+
+### Conexión pendiente con backend
+
+| Área | Decisión necesaria para producción |
+| --- | --- |
+| Catálogo | Cargar SKUs oficiales, fotos, marcas, unidades y presentaciones válidas. Sustituir los datos de `shop.js`. |
+| Precio | Definir moneda, impuestos, listas por cliente, descuentos y vigencia. Recalcular siempre en servidor. |
+| Existencias | Consultar disponibilidad por sucursal/CEDIS y decidir reservas, caducidad y pedidos parciales. |
+| Pedido | Crear folio persistente, validar cantidades y presentaciones en servidor y evitar duplicados por reintentos. |
+| Entrega | Confirmar sucursales, cobertura, costos, horarios y productos con restricciones de traslado. |
+| Pago | Seleccionar proveedor y definir cuándo se cobra. El frontend no recibe datos bancarios actualmente. |
+| Comunicación | Elegir canal de confirmación y consentimiento; reemplazar correo preparado por un flujo transaccional validado. |
+| Privacidad | Definir aviso de privacidad y conservación de datos antes de registrar clientes y pedidos. |
+
+### Verificación realizada
+
+Sintaxis de ambos archivos JavaScript, búsqueda, filtros, orden, paginación a 24 productos, selección de galón, acumulación de una presentación repetida, cantidades mediante botones y captura directa (incluye límites 1/999), eliminación y estado vacío, persistencia tras recargar, preparación de solicitud con entrega y correo codificado sin envío, y vista móvil de 390 px sin desbordamiento horizontal. Revisión de consola sin errores durante las pruebas.
