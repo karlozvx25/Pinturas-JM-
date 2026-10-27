@@ -127,3 +127,8 @@ Incluye **64 productos genéricos en ocho categorías**, con presentaciones ilus
 ### Verificación realizada
 
 Sintaxis de ambos archivos JavaScript, búsqueda, filtros, orden, paginación a 24 productos, selección de galón, acumulación de una presentación repetida, cantidades mediante botones y captura directa (incluye límites 1/999), eliminación y estado vacío, persistencia tras recargar, preparación de solicitud con entrega y correo codificado sin envío, y vista móvil de 390 px sin desbordamiento horizontal. Revisión de consola sin errores durante las pruebas.
+
+
+## Legibilidad
+
+Revisión del 27 oct 2026: Arial en texto e interfaz; mínimo de 11 px para etiquetas, controles y texto auxiliar en todos los tamaños de pantalla. Se conservan títulos y texto principal de mayor tamaño.
