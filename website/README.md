@@ -1,6 +1,6 @@
 # Página web comercial · Pinturas JM
 
-Rama: `pagina-web`. El sitio está en `website/`; la plataforma operativa de `dist/` se conserva sin modificaciones.
+Rama de trabajo: `pagina-web`; rama de publicación: `main`. El sitio está en `website/`; la plataforma operativa se conserva en `dist/`.
 
 ## Iniciar
 
@@ -56,7 +56,10 @@ El identificador tipográfico y el favicon son una propuesta para esta web; el a
 
 - `npm run web:check`: sintaxis JavaScript.
 - Probar menú con teclado/Escape, líneas desplegables, cambio de color/luz, consulta preparada sin envío, enlaces internos y adaptación móvil.
-- La vista previa publicada de esta web es un sitio independiente. No reemplaza la plataforma operativa y no se publica automáticamente al hacer push a GitHub.
+- GitHub Pages publica únicamente `website/` mediante `.github/workflows/pages.yml` al integrar cambios de la web en `main`. También permite ejecución manual desde Actions. La propuesta y el prototipo mantienen sus enlaces y permisos independientes.
+- URL de GitHub Pages: https://karlozvx25.github.io/Pinturas-JM-/
+- Flujo: editar `pagina-web`, verificar con `npm run web:check`, integrar en `main` y revisar el despliegue en Actions. El merge hacia `main` no actualiza por sí solo otras ramas; para mantener `pagina-web` alineada, incorporar después `main` sin sobrescribir historial.
+- El artefacto contiene sólo los archivos comerciales de `website/`, sin fuentes internas, documentos del cliente ni la cotización financiera. El botón de cotización conserva su enlace al Site de propuesta.
 
 
 ## Efecto interactivo de pintura
