@@ -57,3 +57,14 @@ El identificador tipográfico y el favicon son una propuesta para esta web; el a
 - `npm run web:check`: sintaxis JavaScript.
 - Probar menú con teclado/Escape, líneas desplegables, cambio de color/luz, consulta preparada sin envío, enlaces internos y adaptación móvil.
 - La vista previa publicada de esta web es un sitio independiente. No reemplaza la plataforma operativa y no se publica automáticamente al hacer push a GitHub.
+
+
+## Efecto interactivo de pintura
+
+Inspiración de interacción: [Lando Norris](https://landonorris.com/) y video de referencia aportado por el cliente. Implementación propia: no se copian código, retratos, cascos ni recursos de esa web.
+
+La portada combina una base grafito con una capa de color recortada mediante un pincel orgánico Canvas 2D. El cursor deja una estela que se desvanece; los controles permiten explorar rojo, azul y cobre, ver toda la capa y volver al pincel. Son variaciones artísticas de la imagen conceptual, no simulaciones físicas ni fórmulas de pintura.
+
+En dispositivos táctiles se activa explícitamente el pincel para dibujar sobre la imagen; al desactivarlo se recupera el desplazamiento normal. El botón de acabado completo también permite explorar sin dibujar. Los botones funcionan con teclado. Con preferencia de movimiento reducido se usa la vista estática seleccionable. El render limita resolución, se detiene al terminar la estela y se pausa cuando la portada deja de estar visible. Sin Canvas se conserva la imagen de portada.
+
+Verificación: sintaxis JavaScript, trazo y desaparición visual en navegador, selección de acabado, retorno al pincel y composición a 390 px sin desbordamiento horizontal. La activación táctil requiere una comprobación adicional en un teléfono físico.

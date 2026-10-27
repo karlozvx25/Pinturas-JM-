@@ -64,3 +64,85 @@ if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:0.1});
   document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
 }
+
+// Original cursor-driven paint reveal. Screen colors are artistic, not formulas.
+(()=>{
+  const hero=document.querySelector('.hero'),canvas=document.querySelector('#paint-canvas');
+  const ctx=canvas.getContext('2d');
+  if(!ctx){document.querySelector('.paint-panel').hidden=true;return;}
+  const mask=document.createElement('canvas'),maskCtx=mask.getContext('2d');
+  const layer=document.createElement('canvas'),layerCtx=layer.getContext('2d');
+  const image=new Image();
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  const coarse=matchMedia('(pointer: coarse)');
+  const preview=document.querySelector('#paint-preview'),touch=document.querySelector('#paint-touch');
+  const hint=document.querySelector('#paint-hint');
+  let w=0,h=0,scale=1,frame=0,previous=null,points=[],full=false,enabled=false,ready=false,visible=true,lastTime=0;
+  let hue=115,paintUntil=0;
+  function source(){
+    if(!ready)return;
+    layerCtx.clearRect(0,0,w,h);
+    const fit=Math.max(w/image.width,h/image.height),iw=image.width*fit,ih=image.height*fit;
+    const position=w<=480?.61:w<=1000?.68:.67;
+    layerCtx.filter=`hue-rotate(${hue}deg) saturate(1.25)`;
+    layerCtx.drawImage(image,(w-iw)*position,(h-ih)*.5,iw,ih);
+    layerCtx.filter='none';
+  }
+  function size(){
+    w=hero.clientWidth;h=hero.clientHeight;scale=Math.min(devicePixelRatio||1,1.5);
+    [canvas,mask,layer].forEach(c=>{c.width=Math.round(w*scale);c.height=Math.round(h*scale);c.getContext('2d').setTransform(scale,0,0,scale,0,0)});
+    source();wake();
+  }
+  function dab(x,y){
+    const radius=Math.min(w*.17,120);
+    // Overlapping soft lobes avoid the circular spotlight look.
+    for(let k=0;k<5;k++){
+      const a=k*2.399,ox=Math.cos(a)*radius*.26,oy=Math.sin(a)*radius*.22,r=radius*(.66+k*.045);
+      const g=maskCtx.createRadialGradient(x+ox,y+oy,r*.36,x+ox,y+oy,r);
+      g.addColorStop(0,'rgba(255,255,255,.94)');g.addColorStop(.7,'rgba(255,255,255,.82)');g.addColorStop(1,'rgba(255,255,255,0)');
+      maskCtx.fillStyle=g;maskCtx.fillRect(x+ox-r,y+oy-r,r*2,r*2);
+    }
+  }
+  function render(time){
+    frame=0;
+    if(!ready||!visible)return;
+    const delta=Math.min(time-lastTime||16,64);lastTime=time;
+    maskCtx.globalCompositeOperation='destination-out';
+    maskCtx.fillStyle=`rgba(0,0,0,${1-Math.exp(-delta/850)})`;maskCtx.fillRect(0,0,w,h);
+    maskCtx.globalCompositeOperation='source-over';
+    points.forEach(p=>dab(p.x,p.y));points=[];
+    ctx.clearRect(0,0,w,h);ctx.globalCompositeOperation='source-over';ctx.drawImage(layer,0,0,w,h);
+    if(!full){ctx.globalCompositeOperation='destination-in';ctx.drawImage(mask,0,0,w,h);ctx.globalCompositeOperation='source-over'}
+    if(!full&&time<(paintUntil)&&!reduced.matches)frame=requestAnimationFrame(render);
+  }
+  function wake(){if(!frame&&ready&&visible)frame=requestAnimationFrame(render)}
+  function point(event){
+    if(!ready||full||reduced.matches||(event.pointerType==='touch'&&!enabled))return;
+    if(event.target.closest('button,a,.paint-panel')){previous=null;return}
+    const r=hero.getBoundingClientRect(),p={x:event.clientX-r.left,y:event.clientY-r.top};
+    if(previous){const distance=Math.hypot(p.x-previous.x,p.y-previous.y),steps=Math.min(30,Math.ceil(distance/15));for(let i=1;i<=steps;i++)points.push({x:previous.x+(p.x-previous.x)*i/steps,y:previous.y+(p.y-previous.y)*i/steps})}
+    else points.push(p);
+    previous=p;paintUntil=performance.now()+4000;wake();
+  }
+  function setFull(value){full=value;preview.setAttribute('aria-pressed',String(full));preview.textContent=full?'Volver al pincel ↗':'Ver acabado completo ↗';wake()}
+  hero.addEventListener('pointermove',point,{passive:true});
+  hero.addEventListener('pointerdown',event=>{previous=null;point(event)});
+  hero.addEventListener('pointerleave',()=>{previous=null});
+  hero.addEventListener('pointerup',()=>{previous=null});
+  touch.addEventListener('click',()=>{enabled=!enabled;canvas.classList.toggle('touch-enabled',enabled);touch.setAttribute('aria-pressed',String(enabled));touch.textContent=enabled?'Desactivar pincel':'Activar pincel';hint.textContent=enabled?'Desliza sobre la imagen para pintar.':'Activa el pincel o mira el acabado.'});
+  preview.addEventListener('click',()=>setFull(!full));
+  document.querySelectorAll('[data-paint]').forEach(button=>button.addEventListener('click',()=>{
+    hue=[115,0,155][Number(button.dataset.paint)];source();
+    document.querySelectorAll('[data-paint]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    // A complete preview also makes the palette usable with keyboard and touch.
+    setFull(true);
+  }));
+  if(coarse.matches)hint.textContent='Activa el pincel o mira el acabado.';
+  if(reduced.matches)hint.textContent='Elige y explora un acabado sin movimiento.';
+  new ResizeObserver(size).observe(hero);
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)wake();else if(frame){cancelAnimationFrame(frame);frame=0}},{threshold:0}).observe(hero);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){if(frame)cancelAnimationFrame(frame);frame=0}else wake()});
+  image.onload=()=>{ready=true;hero.classList.add('paint-active');size()};
+  image.onerror=()=>{document.querySelector('.paint-panel').hidden=true};
+  image.src='assets/hero-color.png';
+})();

@@ -6,3 +6,13 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion .reveal{opacity:1;transform:none}}
 .contact-pill{background:#d43c2d}.hero-shade{background:linear-gradient(180deg,#080b0da3 0%,transparent 35%),linear-gradient(90deg,#080b0de6 0%,#080b0d55 41%,#080b0d00 76%),linear-gradient(0deg,#080b0db8,transparent 40%)}
 @media(max-width:520px){.hero-shade{background:linear-gradient(180deg,#080b0d9c,transparent 40%),linear-gradient(90deg,#080b0dba,#080b0d30),linear-gradient(0deg,#080b0dbb,transparent 80%)}}
+
+/* Paint reveal: original image, transient organic mask, no external runtime. */
+.hero-image{animation:none;transform:none!important}.hero.paint-active .hero-image{filter:grayscale(1) brightness(.8)}
+#paint-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-shade,.hero-topline,.hero h1{pointer-events:none}
+.paint-panel{position:absolute;right:3.4%;top:54%;z-index:3;max-width:310px;padding:22px;background:#0b0d0e9c;border:1px solid #ffffff32;backdrop-filter:blur(16px);border-radius:4px}
+.paint-eyebrow{font-size:9px;letter-spacing:2px;color:#ffffffa6}.paint-panel p{font-size:22px;letter-spacing:-.7px;margin:12px 0 18px;line-height:1.1}.paint-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.paint-actions [data-paint]{width:27px;height:27px;border:4px solid #202020;border-radius:50%;background:var(--chip);outline:1px solid #ffffff42}.paint-actions [aria-pressed=true][data-paint]{outline:2px solid white;outline-offset:3px}.paint-actions #paint-preview,.paint-actions #paint-touch{border:0;border-bottom:1px solid #ffffff60;padding:9px 0;background:transparent;color:white;font-size:11px}.paint-panel small{display:block;font-size:7px;letter-spacing:1px;margin-top:15px;color:#ffffffa6}#paint-touch{display:none}.hero.paint-active{cursor:crosshair}
+@media(pointer:coarse){#paint-touch{display:block}.hero.paint-active{touch-action:pan-y}#paint-canvas.touch-enabled{pointer-events:auto;touch-action:none;z-index:1}.hero h1{z-index:2}}
+@media(max-width:700px){.paint-panel{top:auto;bottom:135px;left:5%;right:auto;max-width:90%;padding:15px 18px}.paint-panel p{font-size:17px;margin:9px 0 12px}.paint-panel small{margin-top:10px}.hero h1{top:230px}}
+@media(prefers-reduced-motion:reduce){.paint-panel{backdrop-filter:none}}
