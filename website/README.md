@@ -68,3 +68,13 @@ La portada combina una base grafito con una capa de color recortada mediante un 
 En dispositivos táctiles se activa explícitamente el pincel para dibujar sobre la imagen; al desactivarlo se recupera el desplazamiento normal. El botón de acabado completo también permite explorar sin dibujar. Los botones funcionan con teclado. Con preferencia de movimiento reducido se usa la vista estática seleccionable. El render limita resolución, se detiene al terminar la estela y se pausa cuando la portada deja de estar visible. Sin Canvas se conserva la imagen de portada.
 
 Verificación: sintaxis JavaScript, trazo y desaparición visual en navegador, selección de acabado, retorno al pincel y composición a 390 px sin desbordamiento horizontal. La activación táctil requiere una comprobación adicional en un teléfono físico.
+
+
+## Accesos al proyecto y cotización
+
+La cabecera contiene dos accesos visibles en escritorio y móvil:
+
+- **Entrar al prototipo:** abre el prototipo operativo existente en otra pestaña, en `https://pinturas-jm-operacion.karlozvx.chatgpt.site/`. Respeta las condiciones de acceso que tenga ese sitio.
+- **Ver cotización:** abre un diálogo accesible con el estado «Documento pendiente». Puede cerrarse con el botón, Escape o clic fuera. No contiene importes, fechas de entrega ni un documento ficticio.
+
+Cuando se entregue la cotización final se sustituirá el contenido pendiente de `#quote-dialog` por su presentación y el acceso al documento aprobado. No hay carga de documentos ni publicación automática desde el navegador.
