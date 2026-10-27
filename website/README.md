@@ -142,3 +142,8 @@ Revisión del 27 oct 2026: Arial en texto e interfaz; mínimo de 11 px para etiq
 La portada prioriza «Cotización formal y proyecto para Pinturas JM» con accesos grandes a cotización y prototipo. La propuesta incluye los 13 diagramas de arquitectura interactivos, el botón «Exportar a PDF» y el cierre de LEM CARLOS VAZQUEZ LEDEZMA, Director Comercial y Cofundador de SyborX.
 
 Para el equipo: editar la web en `website/`, la propuesta en `website/propuesta/` y el prototipo en `dist/` (su copia publicada está en `website/prototipo/`). GitHub Pages despliega `website/` desde `main`. Los botones existentes conservan sus enlaces a Sites; publicar cambios en GitHub no actualiza esos sitios independientes.
+
+
+## Accesos independientes de ChatGPT
+
+Los botones de esta copia en GitHub enlazan a `prototipo/` y `propuesta/` dentro de la misma publicación. `npm start` abre el conjunto completo en http://localhost:8765/. Los Sites de ChatGPT conservan su publicación independiente.

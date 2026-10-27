@@ -1,4 +1,25 @@
-> **Rama `pagina-web`:** nueva web comercial de Pinturas JM en [`website/`](website/README.md). Ejecuta `npm run web:start` para verla. La plataforma operativa y su manual se conservan debajo.
+# Acceso al proyecto completo · Pinturas JM
+
+Todo está integrado en **main**. La entrada principal es la web; el prototipo y la cotización se abren desde sus botones, sin requerir acceso a ChatGPT.
+
+| Componente | Sitio publicado | Código |
+| --- | --- | --- |
+| Página web | [Abrir web](https://karlozvx25.github.io/Pinturas-JM-/) | [`website/index.html`](website/index.html) |
+| Prototipo operativo | [Abrir prototipo](https://karlozvx25.github.io/Pinturas-JM-/prototipo/) | [`website/prototipo/`](website/prototipo/) |
+| Cotización y diagramas | [Abrir propuesta](https://karlozvx25.github.io/Pinturas-JM-/propuesta/) | [`website/propuesta/`](website/propuesta/) |
+| Documento para PDF | [Abrir documento](https://karlozvx25.github.io/Pinturas-JM-/propuesta/propuesta-completa.html) | [`website/propuesta/propuesta-completa.html`](website/propuesta/propuesta-completa.html) |
+
+## Inicio para el equipo
+
+```bash
+npm start
+```
+
+Abrir **http://localhost:8765/**. Sirve el proyecto completo desde `website/`. No requiere instalación de dependencias. `npm run web:start` sirve la misma web en el puerto 8775. Para iniciar sólo el prototipo original de `dist/`, usar `npm run prototype:start` y abrir http://localhost:8766/.
+
+GitHub Pages despliega únicamente `website/` desde `main` mediante `.github/workflows/pages.yml`. Los enlaces entre web, propuesta y prototipo son relativos para funcionar tanto en local como en Pages. Al editar el prototipo original en `dist/`, mantener actualizada su copia de publicación en `website/prototipo/`.
+
+---
 
 # Pinturas JM · operación comercial y atelier de color
 
@@ -7,7 +28,7 @@ Prototipo interactivo de **SyborX** para explorar la operación de **Pinturas JM
 **Estado:** prototipo funcional en navegador, con datos ficticios y persistencia local. **No es un ERP productivo, un backend ni una integración ya realizada con SAE, IA o maquinaria.**
 
 - [Prototipo privado publicado](https://pinturas-jm-operacion.karlozvx.chatgpt.site/): requiere acceso autorizado con ChatGPT.
-- Este repositorio contiene una copia versionada del frontend. Un push a GitHub no actualiza automáticamente la demo privada; no hay CI/CD de publicación configurado.
+- Este repositorio contiene una copia versionada del frontend. GitHub Pages publica `website/` automáticamente desde `main`. Los Sites privados de ChatGPT son publicaciones independientes.
 - Punto de entrada del código: [`dist/index.html`](dist/index.html).
 - Perfil inicial: **Administrador de tienda**. El selector superior permite explorar **Central/CEDIS** y **Gerencia** como perfiles de demostración.
 - Documentación base: edición funcional de códigos de barras y vistas por tienda, levantamiento del 16 de octubre de 2026 y revisión del repositorio del 21 de octubre de 2026.
@@ -45,7 +66,7 @@ Dar visibilidad y trazabilidad a la existencia, transformación y traslado de pr
 
 ### Objetivo del prototipo
 
-Validar con usuarios la navegación por puesto, la lectura de códigos, el control de cantidades y las decisiones operativas antes de comprometer arquitectura, integración o desarrollo productivo. La cotización comercial queda fuera de este repositorio.
+Validar con usuarios la navegación por puesto, la lectura de códigos, el control de cantidades y las decisiones operativas antes de comprometer arquitectura, integración o desarrollo productivo. La cotización comercial está en `website/propuesta/`.
 
 ### Resultados que deben poder comprobarse
 
@@ -110,10 +131,10 @@ El frontend no necesita instalar paquetes ni compilarse. JsBarcode ya está incl
 ```bash
 git clone https://github.com/karlozvx25/Pinturas-JM-.git
 cd Pinturas-JM-
-npm start
+npm run prototype:start
 ```
 
-Abre `http://localhost:8765/`. También puedes iniciar sin npm:
+Abre `http://localhost:8766/` para el prototipo. También puedes iniciar sin npm:
 
 ```bash
 python3 -m http.server 8765 --directory dist
