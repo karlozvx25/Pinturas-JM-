@@ -42,11 +42,11 @@ function choosePhase(index){const phase=phases[index];$('#phase-window').textCon
 document.querySelectorAll('[data-phase]').forEach(button=>button.addEventListener('click',()=>choosePhase(Number(button.dataset.phase))));choosePhase(0);
 const milestones=[{percent:30,title:'Firma e inicio del proyecto'},{percent:20,title:'Base operativa y CEDIS aceptados'},{percent:20,title:'Color, kits y distribución aceptados'},{percent:20,title:'Piloto operativo integrado aceptado'},{percent:10,title:'Despliegue y estabilización concluidos'}];
 function setTax(included){
- const factor=included?1.16:1;$('#development-price').textContent=money(Math.round(3000000*factor));$('#maintenance-price').textContent=money(Math.round(30000*factor));
+ const factor=included?1.16:1;$('#modular-price').textContent=money(Math.round(3000000*factor));$('#modular-tax').textContent=included?'MXN · IVA INCLUIDO':'MXN + IVA';document.querySelectorAll('[data-package-price]').forEach(node=>node.textContent=money(Math.round(Number(node.dataset.packagePrice)*factor)));document.querySelectorAll('.package-tax').forEach(node=>node.textContent=included?'MXN · IVA INCLUIDO':'MXN + IVA');$('#development-price').textContent=money(Math.round(2500000*factor));$('#maintenance-price').textContent=money(Math.round(30000*factor));
  document.querySelectorAll('[data-tax-caption]').forEach(node=>node.textContent=included?'IVA INCLUIDO':(node.classList.contains('price-currency')?'MXN + IVA':'+ IVA'));
  if(included)$('#development-price').nextElementSibling.textContent='MXN · IVA INCLUIDO';
  $('#payments-tax-label').textContent=included?'IMPORTES CON IVA · MXN':'IMPORTES SIN IVA · MXN';
- $('#payments').innerHTML=milestones.map((step,i)=>`<article class="payment"><small>HITO ${String(i+1).padStart(2,'0')}</small><strong>${step.percent}<span>%</span></strong><p>${step.title}</p><b>${money(Math.round(3000000*step.percent/100*factor))}</b><span>${included?'IVA INCLUIDO':'MÁS IVA'}</span></article>`).join('');
+ $('#payments').innerHTML=milestones.map((step,i)=>`<article class="payment"><small>HITO ${String(i+1).padStart(2,'0')}</small><strong>${step.percent}<span>%</span></strong><p>${step.title}</p><b>${money(Math.round(2500000*step.percent/100*factor))}</b><span>${included?'IVA INCLUIDO':'MÁS IVA'}</span></article>`).join('');
  document.querySelectorAll('[data-tax]').forEach(button=>button.setAttribute('aria-pressed',String((button.dataset.tax==='true')===included)));
 }
 document.querySelectorAll('[data-tax]').forEach(button=>button.addEventListener('click',()=>setTax(button.dataset.tax==='true')));setTax(false);
