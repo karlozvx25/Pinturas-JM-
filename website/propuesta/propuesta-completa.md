@@ -48,39 +48,65 @@ La operación offline se refiere al POS y a los flujos expresamente definidos. L
 
 Se entregarán manuales por rol, documentación técnica, repositorio de código y configuración de despliegue. La cesión del desarrollo específico se formalizará en el contrato y se hará efectiva al liquidar el proyecto; las herramientas y componentes de terceros conservarán sus licencias correspondientes. No se cobrará licencia por usuario por el desarrollo propio.
 
-## 4. Inversión
+## 4. Inversión y modalidades de contratación
+
+Se presentan dos alternativas excluyentes para contratar el mismo alcance total. Todos los importes se expresan en pesos mexicanos. El IVA se calcula al 16% y se muestra por separado.
+
+### Opción A · Desarrollo completo con precio preferencial
 
 | Concepto | Importe MXN |
 | --- | ---: |
-| Desarrollo e implementación del alcance descrito | **$3,000,000.00** |
-| IVA, calculado al 16% | $480,000.00 |
-| **Total con IVA** | **$3,480,000.00** |
+| Desarrollo completo con precio preferencial | **$2,500,000** |
+| IVA · 16% | $400,000 |
+| **Total con IVA** | **$2,900,000** |
+| Ahorro frente a la suma de paquetes, antes de IVA | **$500,000** |
 
-**El diseño de la página web y su vinculación con el portal operativo están incluidos en los $3,000,000 MXN de desarrollo.**
+**Condición de la promoción: firma del contrato por todo el desarrollo y pago del anticipo a más tardar el 31 de octubre de 2026, hora del centro de México.** El anticipo es del 30%: $750,000 más $120,000 de IVA, para un pago inicial de $870,000. Ambas condiciones deben cumplirse dentro de la vigencia; una firma sin anticipo no activa el precio preferencial. Esta fecha no se extiende por la vigencia general del documento. Fuera de ese plazo, el precio preferencial deja de aplicar y la contratación deberá formalizarse conforme a las condiciones vigentes, sin renovación automática de la promoción.
 
-| Servicio recurrente / infraestructura | Importe y condición |
+La opción A incluye el alcance completo descrito, diseño web vinculado al portal, pruebas, migración acordada, capacitación, despliegue y estabilización. No reduce módulos ni entregables.
+
+### Opción B · Contratación por paquetes de implementación
+
+Permite contratar y ejecutar por etapas. Los cinco paquetes suman $3,000,000 más IVA si se contrata todo el alcance. La promoción de la opción A no se aplica a contrataciones parciales ni se acumula con los precios de estos paquetes.
+
+| Paquete | Alcance agrupado | Dependencias | Sin IVA | IVA · 16% | Total con IVA |
+| --- | --- | --- | ---: | ---: | ---: |
+| 01 · Base operativa y CEDIS | Catálogo y códigos de barras; compras y recepción; inventarios y producción JM; seguridad y trazabilidad. Incluye levantamiento y arquitectura base. | Punto de partida obligatorio para los demás paquetes. | $900,000 | $144,000 | $1,044,000 |
+| 02 · Color y distribución | Reabastecimiento y distribución; laboratorio de igualación; kits técnicos y complementos. Incluye el servicio mínimo de tickets para validar la vinculación de igualados. | Requiere el paquete 1. La venta completa se habilita con el paquete 3. | $650,000 | $104,000 | $754,000 |
+| 03 · Venta y control | Punto de venta y mayoreo; cortes y control de crédito; facturación electrónica con PAC seleccionado. | Requiere el paquete 1; para vender igualados y kits con consumo integrado, también el paquete 2. | $700,000 | $112,000 | $812,000 |
+| 04 · Dirección e inteligencia operativa | Tableros, alertas y asistencia contextual sobre datos y documentos autorizados. Decisiones sensibles con aprobación humana. | Requiere el paquete 1 y los paquetes operativos que generen los datos a analizar; ventas y cartera requieren el paquete 3. | $400,000 | $64,000 | $464,000 |
+| 05 · Web, atención e integración final | Diseño web y portal, catálogo y pedidos; atención y seguimiento comercial; integración final, piloto global y despliegue del conjunto contratado. | Requiere el paquete 1; precios y pedidos conectados requieren el paquete 3. La integración global requiere los paquetes que se contraten. | $350,000 | $56,000 | $406,000 |
+| **Total de los cinco paquetes** | **Alcance completo** | **Ejecución coordinada por dependencias** | **$3,000,000** | **$480,000** | **$3,480,000** |
+
+Los importes de la opción B son por paquete, no mensualidades ni financiamiento. Sólo se contratarán los paquetes expresamente acordados, respetando sus requisitos previos. El paquete 1 establece la base compartida y no se vuelve a cobrar en los paquetes posteriores. Las pruebas, documentación, capacitación y puesta en marcha del alcance de cada paquete están incluidas en su importe; la coordinación y despliegue global del conjunto se contemplan en el paquete 5. No se duplicarán cargos de integración ya incluidos.
+
+**Cada contratación modular tendrá su propio calendario, entregables, criterios de aceptación y esquema de pagos, que se acordarán por escrito antes de iniciar.** Las 34 semanas propuestas corresponden al desarrollo completo coordinado, no a la suma automática de contrataciones separadas ni a un plazo garantizado para cada paquete. El intervalo entre contrataciones puede modificar el calendario global. Un paquete no contratado no estará disponible ni se considerará entregado.
+
+### Servicios recurrentes e infraestructura · Ambas opciones
+
+| Concepto | Importe y condición |
 | --- | --- |
-| Mantenimiento mensual de la plataforma y la web | **$30,000 MXN más IVA mensuales** ($34,800 MXN con IVA al 16%) |
-| Servidores físicos o virtuales, infraestructura en nube y hospedaje | **No incluidos. Se podrán cotizar por separado** según capacidad, seguridad y operación requeridas. |
+| Mantenimiento de la plataforma y la web | **$30,000 MXN más IVA mensuales** ($34,800 con IVA), con el alcance y comienzo de la sección 8. No se multiplica por paquete. |
+| Servidores físicos o virtuales, nube y hospedaje | **No incluidos. Se podrán cotizar por separado** según capacidad, seguridad y operación. |
 
-El mantenimiento es un servicio recurrente independiente del importe de desarrollo. Su alcance y comienzo se indican en la sección 8.
+El mantenimiento es independiente de ambas inversiones. En contratación modular, su inicio se acordará según la aceptación y garantía del alcance puesto en operación, sin cobro por defectos cubiertos por garantía ni duplicidad de mantenimiento por paquete. Se conservan las exclusiones de RRHH, Contabilidad, hardware y servicios de terceros.
 
-El precio de desarrollo será fijo para el alcance que se describa y formalice en el anexo contractual. Incluye levantamiento, diseño, desarrollo, pruebas, migración acordada, capacitación, despliegue y estabilización. No incluye los servicios recurrentes ni las exclusiones indicadas más adelante.
+El precio se formalizará en el contrato y anexo del alcance elegido. Las ampliaciones requieren aprobación escrita de su impacto económico y de calendario; no se aplicarán incrementos automáticos por decisiones internas de implementación.
 
-El levantamiento detallará las reglas y criterios del alcance incluido. Toda ampliación se documentará con su impacto económico y de calendario y requerirá aprobación escrita antes de ejecutarse; no se aplicarán incrementos automáticos por decisiones internas de implementación.
+## 5. Esquema de pagos · Opción A
 
-## 5. Esquema de pagos propuesto
+Se conserva el esquema 30% / 20% / 20% / 20% / 10%, calculado sobre los $2,500,000 MXN antes de IVA de la opción A.
 
-| Hito | Porcentaje | Sin IVA | IVA | Total |
+| Hito | Porcentaje | Sin IVA | IVA · 16% | Total con IVA |
 | --- | ---: | ---: | ---: | ---: |
-| Firma e inicio del proyecto | 30% | $900,000 | $144,000 | $1,044,000 |
-| Aceptación de base operativa y CEDIS | 20% | $600,000 | $96,000 | $696,000 |
-| Aceptación de color, kits y distribución | 20% | $600,000 | $96,000 | $696,000 |
-| Aceptación del piloto operativo integrado | 20% | $600,000 | $96,000 | $696,000 |
-| Despliegue completo y cierre de estabilización | 10% | $300,000 | $48,000 | $348,000 |
-| **Total** | **100%** | **$3,000,000** | **$480,000** | **$3,480,000** |
+| Firma e inicio del proyecto | 30% | $750,000 | $120,000 | $870,000 |
+| Aceptación de base operativa y CEDIS | 20% | $500,000 | $80,000 | $580,000 |
+| Aceptación de color, kits y distribución | 20% | $500,000 | $80,000 | $580,000 |
+| Aceptación del piloto operativo integrado | 20% | $500,000 | $80,000 | $580,000 |
+| Despliegue completo y cierre de estabilización | 10% | $250,000 | $40,000 | $290,000 |
+| **Total** | **100%** | **$2,500,000** | **$400,000** | **$2,900,000** |
 
-Los hitos se comprobarán contra los entregables y criterios de aceptación del anexo de alcance. La revisión de cada entrega se realizará conjuntamente; no se presumirá aceptación por silencio. El plazo de pago y tratamiento de retrasos se definirán en el contrato.
+El anticipo debe pagarse dentro de la vigencia promocional indicada. Los demás hitos se comprobarán contra los entregables y criterios de aceptación del anexo. La revisión será conjunta; no se presume aceptación por silencio. Los vencimientos y tratamiento de retrasos se definirán en el contrato. **Esta tabla corresponde a la opción A; los pagos por paquete de la opción B se acordarán en cada contratación.**
 
 ## 6. Exclusiones expresas
 
@@ -136,11 +162,11 @@ Las dos soluciones se liberarán bajo el modelo **SaaS (Software as a Service, o
 
 La participación beta permite conocer y evaluar funcionalidades en desarrollo y aportar retroalimentación; no supone una fecha de liberación comprometida ni la disponibilidad de todas las funciones de una versión comercial.
 
-**Estos beneficios no reincorporan los módulos de Contabilidad ni de Recursos Humanos al desarrollo de $3,000,000 MXN más IVA.** Las suscripciones SaaS y sus condiciones comerciales se contratarán por separado; no están incluidas en ese importe ni en los $30,000 MXN más IVA de mantenimiento mensual del proyecto a la medida.
+**Estos beneficios no reincorporan los módulos de Contabilidad ni de Recursos Humanos al alcance de desarrollo de cualquiera de las dos modalidades.** Las suscripciones SaaS y sus condiciones comerciales se contratarán por separado; no están incluidas en los importes de ninguna modalidad ni en los $30,000 MXN más IVA de mantenimiento mensual del proyecto a la medida.
 
 ## 10. Formalización
 
-Esta versión es un borrador para revisión. La cotización final tendrá una vigencia propuesta de 30 días naturales desde su emisión. El inicio se acordará después de firmar contrato y anexo de alcance, recibir el anticipo y habilitar los accesos e insumos necesarios.
+Esta versión es un borrador para revisión. La cotización final tendrá una vigencia general propuesta de 30 días naturales desde su emisión; esta vigencia no extiende la promoción de la opción A, que exige firma y anticipo a más tardar el 31 de octubre de 2026. El inicio se acordará después de firmar contrato y anexo de alcance, recibir el anticipo y habilitar los accesos e insumos necesarios.
 
 Propuesta elaborada por el equipo comercial de SyborX, con el compromiso de convertir la visión de Pinturas JM en una solución que impulse su operación y acompañe su crecimiento.
 
