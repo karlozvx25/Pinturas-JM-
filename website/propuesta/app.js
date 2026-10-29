@@ -45,6 +45,7 @@ function setTax(included){
  const factor=included?1.16:1;
  document.querySelectorAll('[data-price]').forEach(node=>{const [key,field]=node.dataset.price.split(':');node.textContent=money(Math.round(commercialOptions[key][field]*factor))});
  document.querySelectorAll('[data-monthly]').forEach(node=>{const c=commercialOptions[node.dataset.monthly];node.textContent='≈ '+moneyCents((c.base-c.deposit)/c.months*factor)});
+ document.querySelectorAll('[data-period-price]').forEach(node=>node.textContent=money(Math.round(Number(node.dataset.periodPrice)*factor)));document.querySelectorAll('.period-tax').forEach(node=>node.textContent=included?'MXN · IVA INCLUIDO · pago anticipado':'MXN + IVA · pago anticipado');
  document.querySelectorAll('.commercial-tax').forEach(node=>node.textContent=included?'MXN · IVA INCLUIDO':'MXN + IVA');
  $('#payments-tax-label').textContent=included?'IMPORTES CON IVA · MXN':'IMPORTES SIN IVA · MXN';
  $('#payments').innerHTML=Object.entries(commercialOptions).map(([key,c])=>{const schedule=displayedSchedule(key,included);return `<article class="schedule-card"><h4>Opción ${key} · ${c.months} mensualidades</h4><p>Anticipo: <b>${moneyCents(c.deposit*factor)}</b></p><p>Primera mensualidad: <b>${c.delay} días después del anticipo</b></p><p>${c.months-1} mensualidades de <b>${moneyCents(schedule[0])}</b><br>Última mensualidad: <b>${moneyCents(schedule.at(-1))}</b></p><small>${included?'IVA incluido; redondeos finales se concilian en facturación.':'Cada pago más IVA.'} Sin intereses adicionales.</small></article>`}).join('');

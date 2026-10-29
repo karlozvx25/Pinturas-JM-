@@ -32,25 +32,31 @@ La solución busca reducir diferencias de inventario, errores de surtido y captu
 
 La opción A conserva el alcance completo del catálogo anterior. La opción B no es el mismo sistema con descuento: es una primera fase acotada para controlar inventario y traslados de un CEDIS y 11 sucursales, con piloto inicial en el CEDIS y una sucursal y despliegue posterior de las funciones aceptadas a las diez restantes.
 
-| Área | Incluido en la primera fase de $1,000,000 + IVA | Se reserva para fases posteriores |
+| Área | Incluido en la primera fase de $1,300,000 + IVA | Se reserva para fases posteriores |
 | --- | --- | --- |
 | Catálogo y códigos | Maestro de productos, presentaciones y unidades; equivalencias proveedor/SKU; etiquetas internas y lectura con equipos compatibles. Carga inicial acordada de hasta unas 5,000 referencias. | Imágenes y catálogo de comercio electrónico, reglas comerciales avanzadas. |
 | Recepción y existencias | Captura de recepciones con referencia documental del proveedor, validación por escaneo, cantidades, diferencias, lotes cuando aplique, disponible/reservado/tránsito, kardex y conteos con ajustes autorizados. | Sugeridos de compra, autorización y gestión completa de órdenes de compra, garantías de proveedor y obsequios. |
 | Solicitudes y traslados | Solicitud manual por sucursal, autorización central, reserva, picking y etiquetas, despacho, seguimiento por estados, recepción ciega y parcial, incidencias y resolución auditada. | Reabastecimiento automático, optimización de rutas y GPS/telemetría. |
 | Control por usuario | Roles de tienda, almacén, central y supervisión; alcance por sucursal, bitácora y resumen básico de pendientes, existencias y diferencias. | Analítica avanzada, tableros gerenciales extensos y asistentes de IA. |
 | Saldos durante la transición | Carga inicial validada y registro manual controlado o importación por plantilla de salidas por ventas/consumos; validación para evitar duplicados por referencia. Se acuerda un único mecanismo por flujo. | Integración automática o permanente con SAE/POS y sincronización bidireccional. |
-| Puesta en marcha | Diseño UX de esta fase, backend de sus flujos, pruebas, migración inicial acordada, piloto, capacitación por rol, manuales y despliegue de las funciones incluidas. | Portal comercial conectado, carrito y pedidos web, contact center, canales externos. |
+| Puesta en marcha | Diseño UX de esta fase, backend de sus flujos, pruebas, migración inicial acordada, piloto, capacitación por rol, manuales y despliegue de las funciones incluidas; web institucional de cortesía. | Catálogo conectado, carrito y pedidos web; contact center y canales externos. La web institucional de cortesía sí está incluida. |
 | Procesos especializados | Se conservan las referencias de producto/color en los movimientos incluidos. | Laboratorio y fórmulas, consumo por pigmento, kits, apertura/fraccionamiento y producción/reenvase, POS y mayoreo completos, cortes, crédito, facturación y PAC. |
 
 **Condición de operación de la fase inicial:** la venta, el igualado, la producción y la facturación siguen en el sistema o procedimiento actual. Antes del piloto se acordará cómo registrar sus efectos en inventario, quién los concilia y cuál es la fuente oficial por flujo. No se prometerán existencias al día si no se registran oportunamente las salidas; no se incluyen conectores automáticos al sistema anterior. Si el mecanismo manual o por plantilla no es viable, se deberá redefinir la transición antes de la aceptación, sin presumir una integración incluida.
 
-Las fases posteriores se priorizarán y cotizarán por separado. El precio de la primera fase no garantiza que completar el sistema después cueste únicamente la diferencia frente a la opción A. Se buscará reutilizar la base construida; no se volverán a cobrar componentes ya entregados sin una ampliación o cambio expresamente acordado.
+Al concluir la primera fase, se revisarán las prioridades del cliente y se cotizarán por separado únicamente los módulos adicionales que desee contratar. No hay obligación de contratar las fases pendientes. El precio de la primera fase no garantiza que completar el sistema después cueste únicamente la diferencia frente a la opción A. Se buscará reutilizar la base construida; no se volverán a cobrar componentes ya entregados sin una ampliación o cambio expresamente acordado.
 
 ### Definiciones técnicas que se cerrarán en el levantamiento
 
 Se documentarán los volúmenes reales de las presentaciones, unidades de pigmentos, reglas de kits, catálogo de etiquetas, política de crédito sin conexión, equipos, responsables y ventanas de recepción. La captura manual validada será el respaldo para procesos sin integración de hardware.
 
 La operación offline se refiere al POS y a los flujos expresamente definidos. La autorización de tarjeta o transferencia depende de los servicios bancarios; el timbrado fiscal se realizará con conexión. Se establecerán límites de autonomía y políticas de conflicto antes de las pruebas de aceptación.
+
+### 2.2. Página web institucional de cortesía · Ambas opciones
+
+**La página web institucional se entrega como regalo, sin cargo adicional de desarrollo, en A y B.** Incluye diseño adaptable, presentación de Pinturas JM, líneas de producto, datos de contacto y acceso al portal contratado. No incluye dominio, hospedaje, carga ilimitada de contenidos, campañas ni servicios externos. La cortesía no tiene un importe canjeable ni reduce el precio de la plataforma si el cliente decide no utilizarla.
+
+**En la opción A**, el catálogo conectado, carrito y registro/seguimiento de solicitudes de pedido están incluidos en el alcance de desarrollo. No se cobra un adicional de $240,000 por estas funciones. **En la opción B**, la web institucional se entrega sin comercio electrónico activo: esos procesos requieren contratar el módulo adicional de la sección 4.1. El carrito ilustrativo del prototipo no constituye una integración productiva incluida en B.
 
 ## 3. Implementación y entregables
 
@@ -72,27 +78,41 @@ Emisión: **28 de octubre de 2026**. Vigencia: **30 días naturales a partir de 
 
 | Concepto | Opción A · Desarrollo completo | Opción B · Primera fase operativa |
 | --- | ---: | ---: |
-| Desarrollo antes de IVA | **$2,200,000.00** | **$1,000,000.00** |
-| IVA · 16% | $352,000.00 | $160,000.00 |
-| **Total con IVA** | **$2,552,000.00** | **$1,160,000.00** |
-| Anticipo 30%, antes de IVA | $660,000.00 | $300,000.00 |
-| IVA del anticipo | $105,600.00 | $48,000.00 |
-| **Anticipo total con IVA** | **$765,600.00** | **$348,000.00** |
-| Saldo antes de IVA | $1,540,000.00 | $700,000.00 |
+| Desarrollo antes de IVA | **$2,200,000.00** | **$1,300,000.00** |
+| IVA · 16% | $352,000.00 | $208,000.00 |
+| **Total con IVA** | **$2,552,000.00** | **$1,508,000.00** |
+| Anticipo 30%, antes de IVA | $660,000.00 | $390,000.00 |
+| IVA del anticipo | $105,600.00 | $62,400.00 |
+| **Anticipo total con IVA** | **$765,600.00** | **$452,400.00** |
+| Saldo antes de IVA | $1,540,000.00 | $910,000.00 |
 | Mensualidades del saldo | 12 | 6 |
 | Primera mensualidad | **60 días naturales después del anticipo** | **30 días naturales después del anticipo** |
-| Mantenimiento mensual antes de IVA | **$20,000 / hasta 20 horas** | **$15,000 / hasta 15 horas** |
-| Mantenimiento mensual con IVA | $23,200 | $17,400 |
+| Equivalente mensual de mantenimiento antes de IVA (facturación semestral o anual) | **$20,000 / hasta 20 horas** | **$15,000 / hasta 15 horas** |
+| Equivalente mensual con IVA | $23,200 | $17,400 |
 
 ### Opción A · Plataforma completa
 
 Incluye los 13 módulos descritos, diseño de la página web vinculada al portal, pruebas, migración acordada, capacitación y despliegue. El precio de $2,200,000 + IVA no depende de la promoción anterior. El calendario de desarrollo propuesto es de 34 semanas, más 30 días de estabilización; se acuerdan inicio e insumos en contrato. Los pagos diferidos no amplían automáticamente ese calendario.
 
-### Opción B · Primera fase por $1,000,000 + IVA
+### Opción B · Primera fase por $1,300,000 + IVA
 
 Incluye exclusivamente la fase operativa delimitada en la sección 2.1. Calendario preliminar propuesto: **20 a 24 semanas**, más 30 días de estabilización, sujeto a la validación del levantamiento, datos, transición y disponibilidad de usuarios. Los módulos pospuestos no se incluyen por haber sido mostrados en el prototipo o en los diagramas del alcance completo.
 
 Servidores, administración de infraestructura y consumos externos no están incluidos en ninguna opción ni en sus membresías de mantenimiento. Se presupuestan por separado en la sección 8.1.
+
+### 4.1. Adicional opcional para B · Catálogo, carrito y pedidos conectados
+
+**Precio propuesto: $240,000 MXN + $38,400 de IVA = $278,400 MXN con IVA.** Se contrata por separado y no está incluido en los $1,300,000 + IVA de la primera fase. Es una estimación comercial de SyborX para el alcance siguiente, sujeta a validación técnica y anexo; no es una tarifa de mercado ni una funcionalidad ya implementada.
+
+| Incluye | Límite del adicional |
+| --- | --- |
+| Catálogo comercial | Publicación de productos, presentaciones, precios y disponibilidad desde los datos de la plataforma contratada; búsqueda y filtros. |
+| Carrito y solicitud | Cantidades y presentaciones, validaciones en servidor, datos de contacto y modalidad de entrega/recolección. |
+| Gestión de pedidos | Folio persistente, estados e historial, consulta y seguimiento por personal autorizado; prevención de solicitudes duplicadas por reintentos. |
+| Conexión con la fase inicial | APIs necesarias para consultar el catálogo y registrar solicitudes sin exigir contratar el POS completo. Reglas de precios y disponibilidad se acuerdan previamente. |
+| Entrega | Diseño del flujo UX, pruebas de conexión y permisos, puesta en marcha y capacitación acordadas. |
+
+**No incluye pagos en línea ni pasarela**, comisiones bancarias, facturación/PAC, autorización automática de crédito, fletes o logística de última milla, reservas automáticas de stock, integración con marketplaces ni nuevos conectores a SAE. Un pedido recibido no confirma pago, existencia reservada o entrega. Requiere la fase B operativa, datos autorizados y reglas comerciales aprobadas. Calendario, pagos y aceptación se cotizarán/formalizarán antes del inicio; no se activa automáticamente al terminar B. Se revisará por escrito el mantenimiento al ampliar el alcance, sin aumentos automáticos.
 
 ## 5. Anticipo y pagos diferidos
 
@@ -100,14 +120,14 @@ Servidores, administración de infraestructura y consumos externos no están inc
 
 | Pago | Opción A · Antes de IVA | Opción B · Antes de IVA |
 | --- | ---: | ---: |
-| Anticipo al formalizar | $660,000.00 | $300,000.00 |
-| Mensualidades ordinarias | 11 de $128,333.33 | 5 de $116,666.67 |
-| Última mensualidad ajustada | 1 de $128,333.37 | 1 de $116,666.65 |
-| **Total antes de IVA** | **$2,200,000.00** | **$1,000,000.00** |
-| **IVA total** | **$352,000.00** | **$160,000.00** |
-| **Total con IVA** | **$2,552,000.00** | **$1,160,000.00** |
+| Anticipo al formalizar | $660,000.00 | $390,000.00 |
+| Mensualidades ordinarias | 11 de $128,333.33 | 5 de $151,666.67 |
+| Última mensualidad ajustada | 1 de $128,333.37 | 1 de $151,666.65 |
+| **Total antes de IVA** | **$2,200,000.00** | **$1,300,000.00** |
+| **IVA total** | **$352,000.00** | **$208,000.00** |
+| **Total con IVA** | **$2,552,000.00** | **$1,508,000.00** |
 
-Cada pago lleva IVA. Como referencia, la mensualidad de la opción A es aproximadamente **$148,866.67 con IVA** y la de B aproximadamente **$135,333.33 con IVA**. La última factura ajustará centavos y redondeos de IVA para que el total facturado coincida con el total pactado; las cifras aproximadas no sustituyen el calendario exacto de facturación.
+Cada pago lleva IVA. Como referencia, la mensualidad de la opción A es aproximadamente **$148,866.67 con IVA** y la de B aproximadamente **$175,933.33 con IVA**. La última factura ajustará centavos y redondeos de IVA para que el total facturado coincida con el total pactado; las cifras aproximadas no sustituyen el calendario exacto de facturación.
 
 Este esquema sustituye el anterior 30/20/20/20/10. Las mensualidades corresponden a fechas de pago, no a nuevos hitos de aceptación; los entregables seguirán teniendo criterios y revisiones conjuntas, sin aceptación por silencio. No se añaden intereses por el diferimiento. Vencimientos exactos, tratamiento de retrasos y cualquier suspensión deberán acordarse por escrito; no se incorporan penalizaciones automáticas en este borrador. La cesión del desarrollo específico conserva su condición de liquidación y contrato.
 
@@ -149,11 +169,22 @@ Se incluyen **30 días de estabilización** después del despliegue y **90 días
 
 | Membresía de mantenimiento de software | Opción A | Opción B |
 | --- | ---: | ---: |
-| Cuota mensual antes de IVA | **$20,000** | **$15,000** |
-| Cuota mensual con IVA | $23,200 | $17,400 |
+| Equivalente mensual antes de IVA | **$20,000** | **$15,000** |
+| Equivalente mensual con IVA | $23,200 | $17,400 |
 | Horas incluidas al mes | **Hasta 20 horas** | **Hasta 15 horas** |
 | Acumulación de horas | No acumulables | No acumulables |
-| Alcance | Plataforma completa y web contratadas | Únicamente funciones de la primera fase contratada |
+| Alcance | Plataforma completa y web contratadas | Funciones de la primera fase y web institucional de cortesía |
+
+### Mantenimiento con pago anticipado semestral o anual
+
+Las cuotas mensuales anteriores son **valores de referencia**, no una modalidad de cobro mensual. El cliente elige pago anticipado de seis o doce meses, sin descuento adicional por periodicidad. El primer periodo comienza y se paga al concluir la garantía de 90 días; los siguientes se pagan antes del comienzo del periodo contratado. No se cobra esta membresía durante el desarrollo ni durante la garantía por defectos cubiertos.
+
+| Periodo | A antes de IVA | IVA A | A con IVA | B antes de IVA | IVA B | B con IVA |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Semestral · 6 meses | $120,000 | $19,200 | **$139,200** | $90,000 | $14,400 | **$104,400** |
+| Anual · 12 meses | $240,000 | $38,400 | **$278,400** | $180,000 | $28,800 | **$208,800** |
+
+**La bolsa se administra mes a mes: A hasta 20 horas y B hasta 15 horas mensuales, sin acumulación.** El pago semestral o anual no permite concentrar todas las horas en un solo mes. La renovación, alcance y calendario se formalizarán por escrito. Infraestructura, administrador del servidor y consumos externos permanecen por separado.
 
 La bolsa incluye diagnóstico, soporte funcional, mantenimiento correctivo no cubierto por garantía y ajustes menores sobre funciones ya entregadas, con priorización y registro de horas. Las mejoras que requieran nuevos módulos, integraciones o un proyecto adicional se cotizan aparte. Horas excedentes y trabajos extraordinarios se cotizan y requieren aprobación previa. No hay cargo de mantenimiento multiplicado por sucursal.
 
