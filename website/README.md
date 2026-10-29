@@ -154,3 +154,8 @@ Los botones de esta copia en GitHub enlazan a `prototipo/` y `propuesta/` dentro
 La cotización en `propuesta/` sustituye la promoción anterior. Opción A: $2,200,000 + IVA, 30% de anticipo y saldo en 12 mensualidades desde 60 días después del anticipo; mantenimiento $20,000 + IVA y hasta 20 horas mensuales. Opción B: primera fase operativa por $1,000,000 + IVA, 30% de anticipo y saldo en seis mensualidades desde los 30 días; mantenimiento $15,000 + IVA y hasta 15 horas. Horas no acumulables; mantenimiento tras garantía de 90 días.
 
 `propuesta/comercial.js` centraliza importes y cálculo de mensualidades, con redondeo final para conservar los totales. `propuesta/app.js` presenta la vista con/sin IVA. Mantener sincronizados `propuesta-completa.md` y `propuesta-completa.html` al cambiar condiciones. Los 13 módulos y diagramas representan la opción A; el alcance limitado de B y la transición de inventario están expresamente delimitados. Servidor y administrador se contratan aparte: el presupuesto de infraestructura es orientativo, no oferta de proveedor.
+
+
+## Actualización de opción B y membresías
+
+B sustituye su precio anterior por $1,300,000 + IVA: anticipo $390,000 + IVA y saldo $910,000 + IVA en seis mensualidades. A mantiene $2,200,000 + IVA. Ambas incluyen web institucional de cortesía. A incluye pedidos conectados; B requiere el adicional propuesto de $240,000 + IVA, sin pasarela. Las fases pendientes se cotizan al finalizar B, sólo si el cliente lo solicita. Mantenimiento con cobro anticipado semestral/anual: A $120,000/$240,000 + IVA; B $90,000/$180,000 + IVA. Equivalentes mensuales y bolsas de 20/15 horas se mantienen como referencia, sin acumulación; inicio tras garantía de 90 días.
