@@ -147,3 +147,10 @@ Para el equipo: editar la web en `website/`, la propuesta en `website/propuesta/
 ## Accesos independientes de ChatGPT
 
 Los botones de esta copia en GitHub enlazan a `prototipo/` y `propuesta/` dentro de la misma publicación. `npm start` abre el conjunto completo en http://localhost:8765/. Los Sites de ChatGPT conservan su publicación independiente.
+
+
+## Revisión comercial vigente · 28 octubre 2026
+
+La cotización en `propuesta/` sustituye la promoción anterior. Opción A: $2,200,000 + IVA, 30% de anticipo y saldo en 12 mensualidades desde 60 días después del anticipo; mantenimiento $20,000 + IVA y hasta 20 horas mensuales. Opción B: primera fase operativa por $1,000,000 + IVA, 30% de anticipo y saldo en seis mensualidades desde los 30 días; mantenimiento $15,000 + IVA y hasta 15 horas. Horas no acumulables; mantenimiento tras garantía de 90 días.
+
+`propuesta/comercial.js` centraliza importes y cálculo de mensualidades, con redondeo final para conservar los totales. `propuesta/app.js` presenta la vista con/sin IVA. Mantener sincronizados `propuesta-completa.md` y `propuesta-completa.html` al cambiar condiciones. Los 13 módulos y diagramas representan la opción A; el alcance limitado de B y la transición de inventario están expresamente delimitados. Servidor y administrador se contratan aparte: el presupuesto de infraestructura es orientativo, no oferta de proveedor.

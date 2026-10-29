@@ -28,6 +28,24 @@ La solución busca reducir diferencias de inventario, errores de surtido y captu
 | **Atención y seguimiento comercial** | Registro de solicitudes de sucursales y clientes clave, asignación de responsable, estados e historial. Incluye captura y seguimiento dentro de la plataforma; canales de telefonía y mensajería externos quedan fuera de esta versión. |
 | **Seguridad y trazabilidad** | Acceso por rol y sucursal, autorizaciones, bitácora de operaciones sensibles y configuración de respaldos. Ajustes de inventario, precios, cancelaciones y excepciones quedarán registrados con usuario y motivo. |
 
+### 2.1. Qué se entrega en la opción B · Primera fase operativa
+
+La opción A conserva el alcance completo del catálogo anterior. La opción B no es el mismo sistema con descuento: es una primera fase acotada para controlar inventario y traslados de un CEDIS y 11 sucursales, con piloto inicial en el CEDIS y una sucursal y despliegue posterior de las funciones aceptadas a las diez restantes.
+
+| Área | Incluido en la primera fase de $1,000,000 + IVA | Se reserva para fases posteriores |
+| --- | --- | --- |
+| Catálogo y códigos | Maestro de productos, presentaciones y unidades; equivalencias proveedor/SKU; etiquetas internas y lectura con equipos compatibles. Carga inicial acordada de hasta unas 5,000 referencias. | Imágenes y catálogo de comercio electrónico, reglas comerciales avanzadas. |
+| Recepción y existencias | Captura de recepciones con referencia documental del proveedor, validación por escaneo, cantidades, diferencias, lotes cuando aplique, disponible/reservado/tránsito, kardex y conteos con ajustes autorizados. | Sugeridos de compra, autorización y gestión completa de órdenes de compra, garantías de proveedor y obsequios. |
+| Solicitudes y traslados | Solicitud manual por sucursal, autorización central, reserva, picking y etiquetas, despacho, seguimiento por estados, recepción ciega y parcial, incidencias y resolución auditada. | Reabastecimiento automático, optimización de rutas y GPS/telemetría. |
+| Control por usuario | Roles de tienda, almacén, central y supervisión; alcance por sucursal, bitácora y resumen básico de pendientes, existencias y diferencias. | Analítica avanzada, tableros gerenciales extensos y asistentes de IA. |
+| Saldos durante la transición | Carga inicial validada y registro manual controlado o importación por plantilla de salidas por ventas/consumos; validación para evitar duplicados por referencia. Se acuerda un único mecanismo por flujo. | Integración automática o permanente con SAE/POS y sincronización bidireccional. |
+| Puesta en marcha | Diseño UX de esta fase, backend de sus flujos, pruebas, migración inicial acordada, piloto, capacitación por rol, manuales y despliegue de las funciones incluidas. | Portal comercial conectado, carrito y pedidos web, contact center, canales externos. |
+| Procesos especializados | Se conservan las referencias de producto/color en los movimientos incluidos. | Laboratorio y fórmulas, consumo por pigmento, kits, apertura/fraccionamiento y producción/reenvase, POS y mayoreo completos, cortes, crédito, facturación y PAC. |
+
+**Condición de operación de la fase inicial:** la venta, el igualado, la producción y la facturación siguen en el sistema o procedimiento actual. Antes del piloto se acordará cómo registrar sus efectos en inventario, quién los concilia y cuál es la fuente oficial por flujo. No se prometerán existencias al día si no se registran oportunamente las salidas; no se incluyen conectores automáticos al sistema anterior. Si el mecanismo manual o por plantilla no es viable, se deberá redefinir la transición antes de la aceptación, sin presumir una integración incluida.
+
+Las fases posteriores se priorizarán y cotizarán por separado. El precio de la primera fase no garantiza que completar el sistema después cueste únicamente la diferencia frente a la opción A. Se buscará reutilizar la base construida; no se volverán a cobrar componentes ya entregados sin una ampliación o cambio expresamente acordado.
+
 ### Definiciones técnicas que se cerrarán en el levantamiento
 
 Se documentarán los volúmenes reales de las presentaciones, unidades de pigmentos, reglas de kits, catálogo de etiquetas, política de crédito sin conexión, equipos, responsables y ventanas de recepción. La captura manual validada será el respaldo para procesos sin integración de hardware.
@@ -44,69 +62,54 @@ La operación offline se refiere al POS y a los flujos expresamente definidos. L
 | **3. Venta y control** | POS, mayoreo, cortes, crédito, facturación, tableros y asistencia operativa. | Semanas 19–29 |
 | **4. Integración y despliegue** | Diseño y puesta en marcha de la web vinculada al portal operativo, catálogo y pedidos, seguimiento comercial, migración validada, capacitación, piloto en CEDIS y una sucursal, despliegue a las sucursales restantes y entrega documental. | Semanas 27–34 |
 
-**Plazo propuesto:** 34 semanas de ejecución, seguidas de 30 días naturales de estabilización incluidos. Las etapas se traslapan y se realizarán demostraciones periódicas de avances. Las fechas calendario se fijarán al acordar el inicio y la disponibilidad de insumos y responsables.
+**Plazo propuesto para la opción A:** 34 semanas de ejecución, seguidas de 30 días naturales de estabilización incluidos. Las etapas se traslapan y se realizarán demostraciones periódicas de avances. Las fechas calendario se fijarán al acordar el inicio y la disponibilidad de insumos y responsables.
 
 Se entregarán manuales por rol, documentación técnica, repositorio de código y configuración de despliegue. La cesión del desarrollo específico se formalizará en el contrato y se hará efectiva al liquidar el proyecto; las herramientas y componentes de terceros conservarán sus licencias correspondientes. No se cobrará licencia por usuario por el desarrollo propio.
 
-## 4. Inversión y modalidades de contratación
+## 4. Inversión · Dos formas de avanzar
 
-Se presentan dos alternativas excluyentes para contratar el mismo alcance total. Todos los importes se expresan en pesos mexicanos. El IVA se calcula al 16% y se muestra por separado.
+Emisión: **28 de octubre de 2026**. Vigencia: **30 días naturales a partir de la emisión**. Esta revisión sustituye la promoción anterior del 31 de octubre y el esquema de cinco paquetes. Todos los importes están en MXN; IVA calculado al 16% y separado del precio de desarrollo. Ambas alternativas contemplan pagos diferidos sin intereses adicionales.
 
-### Opción A · Desarrollo completo con precio preferencial
+| Concepto | Opción A · Desarrollo completo | Opción B · Primera fase operativa |
+| --- | ---: | ---: |
+| Desarrollo antes de IVA | **$2,200,000.00** | **$1,000,000.00** |
+| IVA · 16% | $352,000.00 | $160,000.00 |
+| **Total con IVA** | **$2,552,000.00** | **$1,160,000.00** |
+| Anticipo 30%, antes de IVA | $660,000.00 | $300,000.00 |
+| IVA del anticipo | $105,600.00 | $48,000.00 |
+| **Anticipo total con IVA** | **$765,600.00** | **$348,000.00** |
+| Saldo antes de IVA | $1,540,000.00 | $700,000.00 |
+| Mensualidades del saldo | 12 | 6 |
+| Primera mensualidad | **60 días naturales después del anticipo** | **30 días naturales después del anticipo** |
+| Mantenimiento mensual antes de IVA | **$20,000 / hasta 20 horas** | **$15,000 / hasta 15 horas** |
+| Mantenimiento mensual con IVA | $23,200 | $17,400 |
 
-| Concepto | Importe MXN |
-| --- | ---: |
-| Desarrollo completo con precio preferencial | **$2,500,000** |
-| IVA · 16% | $400,000 |
-| **Total con IVA** | **$2,900,000** |
-| Ahorro frente a la suma de paquetes, antes de IVA | **$500,000** |
+### Opción A · Plataforma completa
 
-**Condición de la promoción: firma del contrato por todo el desarrollo y pago del anticipo a más tardar el 31 de octubre de 2026, hora del centro de México.** El anticipo es del 30%: $750,000 más $120,000 de IVA, para un pago inicial de $870,000. Ambas condiciones deben cumplirse dentro de la vigencia; una firma sin anticipo no activa el precio preferencial. Esta fecha no se extiende por la vigencia general del documento. Fuera de ese plazo, el precio preferencial deja de aplicar y la contratación deberá formalizarse conforme a las condiciones vigentes, sin renovación automática de la promoción.
+Incluye los 13 módulos descritos, diseño de la página web vinculada al portal, pruebas, migración acordada, capacitación y despliegue. El precio de $2,200,000 + IVA no depende de la promoción anterior. El calendario de desarrollo propuesto es de 34 semanas, más 30 días de estabilización; se acuerdan inicio e insumos en contrato. Los pagos diferidos no amplían automáticamente ese calendario.
 
-La opción A incluye el alcance completo descrito, diseño web vinculado al portal, pruebas, migración acordada, capacitación, despliegue y estabilización. No reduce módulos ni entregables.
+### Opción B · Primera fase por $1,000,000 + IVA
 
-### Opción B · Contratación por paquetes de implementación
+Incluye exclusivamente la fase operativa delimitada en la sección 2.1. Calendario preliminar propuesto: **20 a 24 semanas**, más 30 días de estabilización, sujeto a la validación del levantamiento, datos, transición y disponibilidad de usuarios. Los módulos pospuestos no se incluyen por haber sido mostrados en el prototipo o en los diagramas del alcance completo.
 
-Permite contratar y ejecutar por etapas. Los cinco paquetes suman $3,000,000 más IVA si se contrata todo el alcance. La promoción de la opción A no se aplica a contrataciones parciales ni se acumula con los precios de estos paquetes.
+Servidores, administración de infraestructura y consumos externos no están incluidos en ninguna opción ni en sus membresías de mantenimiento. Se presupuestan por separado en la sección 8.1.
 
-| Paquete | Alcance agrupado | Dependencias | Sin IVA | IVA · 16% | Total con IVA |
-| --- | --- | --- | ---: | ---: | ---: |
-| 01 · Base operativa y CEDIS | Catálogo y códigos de barras; compras y recepción; inventarios y producción JM; seguridad y trazabilidad. Incluye levantamiento y arquitectura base. | Punto de partida obligatorio para los demás paquetes. | $900,000 | $144,000 | $1,044,000 |
-| 02 · Color y distribución | Reabastecimiento y distribución; laboratorio de igualación; kits técnicos y complementos. Incluye el servicio mínimo de tickets para validar la vinculación de igualados. | Requiere el paquete 1. La venta completa se habilita con el paquete 3. | $650,000 | $104,000 | $754,000 |
-| 03 · Venta y control | Punto de venta y mayoreo; cortes y control de crédito; facturación electrónica con PAC seleccionado. | Requiere el paquete 1; para vender igualados y kits con consumo integrado, también el paquete 2. | $700,000 | $112,000 | $812,000 |
-| 04 · Dirección e inteligencia operativa | Tableros, alertas y asistencia contextual sobre datos y documentos autorizados. Decisiones sensibles con aprobación humana. | Requiere el paquete 1 y los paquetes operativos que generen los datos a analizar; ventas y cartera requieren el paquete 3. | $400,000 | $64,000 | $464,000 |
-| 05 · Web, atención e integración final | Diseño web y portal, catálogo y pedidos; atención y seguimiento comercial; integración final, piloto global y despliegue del conjunto contratado. | Requiere el paquete 1; precios y pedidos conectados requieren el paquete 3. La integración global requiere los paquetes que se contraten. | $350,000 | $56,000 | $406,000 |
-| **Total de los cinco paquetes** | **Alcance completo** | **Ejecución coordinada por dependencias** | **$3,000,000** | **$480,000** | **$3,480,000** |
+## 5. Anticipo y pagos diferidos
 
-Los importes de la opción B son por paquete, no mensualidades ni financiamiento. Sólo se contratarán los paquetes expresamente acordados, respetando sus requisitos previos. El paquete 1 establece la base compartida y no se vuelve a cobrar en los paquetes posteriores. Las pruebas, documentación, capacitación y puesta en marcha del alcance de cada paquete están incluidas en su importe; la coordinación y despliegue global del conjunto se contemplan en el paquete 5. No se duplicarán cargos de integración ya incluidos.
+**Referencia de fechas:** D es el día de recepción del anticipo. La opción A deja un mes de gracia: su primera mensualidad vence en D + 60 días. En la opción B vence en D + 30 días. Las siguientes vencen mensualmente en el día calendario acordado; cuando no exista ese día, se usará el último día del mes. El calendario con fechas exactas se anexará al contrato.
 
-**Cada contratación modular tendrá su propio calendario, entregables, criterios de aceptación y esquema de pagos, que se acordarán por escrito antes de iniciar.** Las 34 semanas propuestas corresponden al desarrollo completo coordinado, no a la suma automática de contrataciones separadas ni a un plazo garantizado para cada paquete. El intervalo entre contrataciones puede modificar el calendario global. Un paquete no contratado no estará disponible ni se considerará entregado.
+| Pago | Opción A · Antes de IVA | Opción B · Antes de IVA |
+| --- | ---: | ---: |
+| Anticipo al formalizar | $660,000.00 | $300,000.00 |
+| Mensualidades ordinarias | 11 de $128,333.33 | 5 de $116,666.67 |
+| Última mensualidad ajustada | 1 de $128,333.37 | 1 de $116,666.65 |
+| **Total antes de IVA** | **$2,200,000.00** | **$1,000,000.00** |
+| **IVA total** | **$352,000.00** | **$160,000.00** |
+| **Total con IVA** | **$2,552,000.00** | **$1,160,000.00** |
 
-### Servicios recurrentes e infraestructura · Ambas opciones
+Cada pago lleva IVA. Como referencia, la mensualidad de la opción A es aproximadamente **$148,866.67 con IVA** y la de B aproximadamente **$135,333.33 con IVA**. La última factura ajustará centavos y redondeos de IVA para que el total facturado coincida con el total pactado; las cifras aproximadas no sustituyen el calendario exacto de facturación.
 
-| Concepto | Importe y condición |
-| --- | --- |
-| Mantenimiento de la plataforma y la web | **$30,000 MXN más IVA mensuales** ($34,800 con IVA), con el alcance y comienzo de la sección 8. No se multiplica por paquete. |
-| Servidores físicos o virtuales, nube y hospedaje | **No incluidos. Se podrán cotizar por separado** según capacidad, seguridad y operación. |
-
-El mantenimiento es independiente de ambas inversiones. En contratación modular, su inicio se acordará según la aceptación y garantía del alcance puesto en operación, sin cobro por defectos cubiertos por garantía ni duplicidad de mantenimiento por paquete. Se conservan las exclusiones de RRHH, Contabilidad, hardware y servicios de terceros.
-
-El precio se formalizará en el contrato y anexo del alcance elegido. Las ampliaciones requieren aprobación escrita de su impacto económico y de calendario; no se aplicarán incrementos automáticos por decisiones internas de implementación.
-
-## 5. Esquema de pagos · Opción A
-
-Se conserva el esquema 30% / 20% / 20% / 20% / 10%, calculado sobre los $2,500,000 MXN antes de IVA de la opción A.
-
-| Hito | Porcentaje | Sin IVA | IVA · 16% | Total con IVA |
-| --- | ---: | ---: | ---: | ---: |
-| Firma e inicio del proyecto | 30% | $750,000 | $120,000 | $870,000 |
-| Aceptación de base operativa y CEDIS | 20% | $500,000 | $80,000 | $580,000 |
-| Aceptación de color, kits y distribución | 20% | $500,000 | $80,000 | $580,000 |
-| Aceptación del piloto operativo integrado | 20% | $500,000 | $80,000 | $580,000 |
-| Despliegue completo y cierre de estabilización | 10% | $250,000 | $40,000 | $290,000 |
-| **Total** | **100%** | **$2,500,000** | **$400,000** | **$2,900,000** |
-
-El anticipo debe pagarse dentro de la vigencia promocional indicada. Los demás hitos se comprobarán contra los entregables y criterios de aceptación del anexo. La revisión será conjunta; no se presume aceptación por silencio. Los vencimientos y tratamiento de retrasos se definirán en el contrato. **Esta tabla corresponde a la opción A; los pagos por paquete de la opción B se acordarán en cada contratación.**
+Este esquema sustituye el anterior 30/20/20/20/10. Las mensualidades corresponden a fechas de pago, no a nuevos hitos de aceptación; los entregables seguirán teniendo criterios y revisiones conjuntas, sin aceptación por silencio. No se añaden intereses por el diferimiento. Vencimientos exactos, tratamiento de retrasos y cualquier suspensión deberán acordarse por escrito; no se incorporan penalizaciones automáticas en este borrador. La cesión del desarrollo específico conserva su condición de liquidación y contrato.
 
 ## 6. Exclusiones expresas
 
@@ -140,15 +143,43 @@ SyborX proporcionará plantillas y herramientas de carga y ejecutará la migraci
 
 El piloto comprobará, entre otros puntos: recepción parcial sin inventario fantasma; consumo por componente de kit; igualado vinculado al ticket; sincronización sin duplicados; cortes con diferencias trazables y acceso restringido por rol. Las pruebas usarán datos y equipos autorizados por el cliente.
 
-## 8. Garantía, soporte y operación
+## 8. Garantía, mantenimiento e infraestructura
 
-Se incluyen **30 días de estabilización** después del despliegue y **90 días de garantía por defectos respecto del alcance aceptado**, contados desde la aceptación final. Nuevas funciones y cambios de alcance se cotizan por separado.
+Se incluyen **30 días de estabilización** después del despliegue y **90 días de garantía por defectos respecto del alcance aceptado**, desde la aceptación final de la opción contratada. Los defectos cubiertos se atienden sin cargo adicional. El mantenimiento comienza **al concluir la garantía**, no durante el desarrollo ni por el solo hecho de comenzar a pagar mensualidades del saldo. El financiamiento del desarrollo y el mantenimiento son conceptos distintos y pueden coincidir después de la garantía.
 
-**Mantenimiento mensual de la plataforma y la página web:** $30,000 MXN más IVA mensuales, con hasta 40 horas de servicio, monitoreo y mantenimiento correctivo/evolutivo dentro de esa bolsa. Objetivo de primera respuesta a incidentes críticos: cuatro horas hábiles dentro del horario de atención que se acuerde. Este tiempo corresponde a respuesta, no a resolución garantizada. No implica atención 24/7. Vigencia, horario, excedentes y servicios cubiertos se formalizarán por separado.
+| Membresía de mantenimiento de software | Opción A | Opción B |
+| --- | ---: | ---: |
+| Cuota mensual antes de IVA | **$20,000** | **$15,000** |
+| Cuota mensual con IVA | $23,200 | $17,400 |
+| Horas incluidas al mes | **Hasta 20 horas** | **Hasta 15 horas** |
+| Acumulación de horas | No acumulables | No acumulables |
+| Alcance | Plataforma completa y web contratadas | Únicamente funciones de la primera fase contratada |
 
-Los defectos cubiertos por la garantía se atenderán sin cargo adicional. El servicio de mantenimiento mensual comenzará al concluir la garantía, evitando doble cobro por el mismo servicio.
+La bolsa incluye diagnóstico, soporte funcional, mantenimiento correctivo no cubierto por garantía y ajustes menores sobre funciones ya entregadas, con priorización y registro de horas. Las mejoras que requieran nuevos módulos, integraciones o un proyecto adicional se cotizan aparte. Horas excedentes y trabajos extraordinarios se cotizan y requieren aprobación previa. No hay cargo de mantenimiento multiplicado por sucursal.
 
-**Los servidores no están incluidos en esta cotización ni en los $30,000 MXN de mantenimiento mensual. Se podrán cotizar por separado**, junto con la infraestructura y los consumos de terceros, según capacidad y uso y antes de su contratación. Estos costos podrán comenzar durante las pruebas y no forman parte de los $3,000,000 MXN de desarrollo.
+Objetivo de primera respuesta a incidentes críticos: cuatro horas hábiles dentro del horario que se acuerde. Se refiere a respuesta, no a resolución garantizada; no incluye guardia 24/7. La disponibilidad y los tiempos también dependen de energía, conectividad, infraestructura y servicios de terceros. Al añadir futuras fases se revisará expresamente el alcance y precio de mantenimiento, sin aumentos automáticos.
+
+### 8.1. Servidor propio · Presupuesto preliminar independiente
+
+**Comprar el servidor no equivale a tenerlo administrado.** Pinturas JM deberá designar o contratar a una persona o proveedor de infraestructura para monitoreo, actualizaciones del sistema operativo, seguridad, accesos, certificados, revisión de respaldos, pruebas de recuperación, capacidad y atención a fallas de hardware/red. No es obligatorio contratar una persona exclusiva si un proveedor puede cubrir esas responsabilidades y horarios. Esta administración no está incluida en las 20 o 15 horas de mantenimiento de software y se cotiza aparte.
+
+La arquitectura preliminar considera un servidor central para aplicación y base de datos, al que accedan por conexión segura el CEDIS y las 11 sucursales. No se necesitan once servidores por ese solo hecho. El dimensionamiento depende de cajas y usuarios simultáneos, transacciones, históricos, adjuntos, base de datos, disponibilidad y recuperación requeridas. **La siguiente configuración es una referencia para solicitar cotizaciones, no una capacidad garantizada ni una orden de compra.**
+
+| Componente de referencia | Configuración preliminar a validar |
+| --- | --- |
+| Servidor empresarial | Dell PowerEdge T360 o equivalente, CPU de clase servidor de aproximadamente 8 núcleos, 64 GB RAM ECC ampliables y soporte del fabricante. Se verificará el SKU exacto. |
+| Almacenamiento | Dos SSD empresariales de aproximadamente 960 GB a 1.92 TB en espejo, controladora compatible y monitoreo. El RAID no sustituye los respaldos. Capacidad útil y crecimiento se validan. |
+| Protección y respaldo | UPS dimensionado, respaldo cifrado externo al servidor y copia fuera del sitio, con pruebas de restauración y retención acordada. |
+| Red y acceso | Firewall, acceso seguro por TLS y administración restringida; conectividad estable en CEDIS y sucursales y evaluación de enlace redundante. No se expondrá la base de datos directamente a internet. |
+| Sistema operativo y licencias | A definir con backend e integraciones. Si se elige Windows Server, revisar licenciamiento y derechos de acceso aplicables; no se presume incluido. |
+
+**Reserva presupuestal orientativa de SyborX: $100,000 a $180,000 MXN antes de IVA** para servidor configurado, protección eléctrica y respaldo básico; con IVA, **$116,000 a $208,800 MXN**. Es una estimación de planeación, no una cotización vinculante de proveedor. No incluye administrador, conectividad, adecuaciones eléctricas/climatización, licencias, implementación de red, consumos de nube ni alta disponibilidad. El costo final deberá respaldarse con propuesta vigente del proveedor, stock, garantía, instalación y configuración exactas antes de contratar.
+
+Como referencia comercial consultada el **28 de octubre de 2026**, PCdigital publica un Dell T360 con Xeon E-2478, 16 GB RAM y disco duro de 2 TB en **$66,668 MXN con IVA**, marcado como agotado. **No es la configuración recomendada, no garantiza disponibilidad y no representa el presupuesto completo**: ampliar memoria, añadir SSD redundantes, UPS, respaldo y servicios modifica el precio. El fabricante documenta memoria ECC y capacidad de ampliación para esta familia, sujetas a configuración.
+
+Fuentes de referencia: [Ficha del fabricante Dell T360](https://www.dell.com/en-us/shop/ipovw/poweredge-t360), [referencia comercial PCdigital, precio y disponibilidad sujetos a cambio](https://www.pcdigital.com.mx/servidor-dell-poweredge-t360-intel-xeon-e-2478-2-8ghz-16gb-ddr5-2tb-sata-iii-t360-fy26q1-mx/), [guía de licenciamiento Windows Server](https://www.microsoft.com/licensing/guidance/Windows-Server-2025).
+
+Un único servidor en CEDIS es un punto de falla: un corte de energía, internet o avería puede afectar a las sucursales. La opción A mantiene únicamente la continuidad offline del POS expresamente delimitada; **la opción B no incluye operación offline**. Alta disponibilidad, segundo servidor, recuperación avanzada o alternativa en nube requieren diseño y cotización independientes. La elección de infraestructura se cerrará con pruebas de carga y objetivos de respaldo/recuperación antes del despliegue productivo.
 
 ## 9. Acceso preferencial al ecosistema SaaS de SyborX
 
@@ -162,11 +193,11 @@ Las dos soluciones se liberarán bajo el modelo **SaaS (Software as a Service, o
 
 La participación beta permite conocer y evaluar funcionalidades en desarrollo y aportar retroalimentación; no supone una fecha de liberación comprometida ni la disponibilidad de todas las funciones de una versión comercial.
 
-**Estos beneficios no reincorporan los módulos de Contabilidad ni de Recursos Humanos al alcance de desarrollo de cualquiera de las dos modalidades.** Las suscripciones SaaS y sus condiciones comerciales se contratarán por separado; no están incluidas en los importes de ninguna modalidad ni en los $30,000 MXN más IVA de mantenimiento mensual del proyecto a la medida.
+**Estos beneficios no reincorporan los módulos de Contabilidad ni de Recursos Humanos al alcance de desarrollo de cualquiera de las dos modalidades.** Las suscripciones SaaS y sus condiciones comerciales se contratarán por separado; no están incluidas en los importes de ninguna modalidad ni en las membresías de mantenimiento de la opción A ($20,000 + IVA) o B ($15,000 + IVA).
 
 ## 10. Formalización
 
-Esta versión es un borrador para revisión. La cotización final tendrá una vigencia general propuesta de 30 días naturales desde su emisión; esta vigencia no extiende la promoción de la opción A, que exige firma y anticipo a más tardar el 31 de octubre de 2026. El inicio se acordará después de firmar contrato y anexo de alcance, recibir el anticipo y habilitar los accesos e insumos necesarios.
+Esta revisión se emite el **28 de octubre de 2026**, con vigencia de **30 días naturales desde su emisión**, y sustituye los precios, promoción y condiciones de pago anteriores. Se formalizará la opción elegida, su alcance, calendario y responsables en contrato y anexo. El inicio requiere firma, anticipo e insumos/accesos acordados. Las fases posteriores de B requieren contratación independiente. Se mantienen las exclusiones y beneficios SaaS descritos, sin reincorporar RRHH ni Contabilidad al desarrollo.
 
 Propuesta elaborada por el equipo comercial de SyborX, con el compromiso de convertir la visión de Pinturas JM en una solución que impulse su operación y acompañe su crecimiento.
 
