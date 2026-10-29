@@ -1,4 +1,4 @@
 'use strict';
-const commercialOptions={"A": {"base": 2200000, "deposit": 660000, "months": 12, "delay": 60, "maintenance": 20000, "hours": 20}, "B": {"base": 1300000, "deposit": 390000, "months": 6, "delay": 30, "maintenance": 15000, "hours": 15}};
+const commercialOptions={"A": {"base": 2200000, "deposit": 660000, "months": 12, "delay": 60, "annualMaintenance": 240000, "semiannualMaintenance": 120000, "hours": 20}, "B": {"base": 1300000, "deposit": 390000, "months": 6, "delay": 30, "annualMaintenance": 180000, "semiannualMaintenance": 90000, "hours": 15}};
 function paymentSchedule(option){const c=typeof option==='string'?commercialOptions[option]:option;const cents=Math.round((c.base-c.deposit)*100),regular=Math.round(cents/c.months);return Array.from({length:c.months},(_,i)=>(i===c.months-1?cents-regular*(c.months-1):regular)/100)}
 function displayedSchedule(key,included){const c=commercialOptions[key],base=paymentSchedule(c);if(!included)return base;const total=Math.round((c.base-c.deposit)*1.16*100),first=Math.round(base[0]*1.16*100);return base.map((_,i)=>(i===c.months-1?total-first*(c.months-1):first)/100)}

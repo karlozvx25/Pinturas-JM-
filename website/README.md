@@ -159,3 +159,8 @@ La cotización en `propuesta/` sustituye la promoción anterior. Opción A: $2,2
 ## Actualización de opción B y membresías
 
 B sustituye su precio anterior por $1,300,000 + IVA: anticipo $390,000 + IVA y saldo $910,000 + IVA en seis mensualidades. A mantiene $2,200,000 + IVA. Ambas incluyen web institucional de cortesía. A incluye pedidos conectados; B requiere el adicional propuesto de $240,000 + IVA, sin pasarela. Las fases pendientes se cotizan al finalizar B, sólo si el cliente lo solicita. Mantenimiento con cobro anticipado semestral/anual: A $120,000/$240,000 + IVA; B $90,000/$180,000 + IVA. Equivalentes mensuales y bolsas de 20/15 horas se mantienen como referencia, sin acumulación; inicio tras garantía de 90 días.
+
+
+## Mantenimiento: sólo pago anual o dos semestrales
+
+Se retiran todos los precios mensuales de mantenimiento de la cotización interactiva y del documento para PDF. A: un pago anual de $240,000 + IVA o dos pagos semestrales de $120,000 + IVA. B: un pago anual de $180,000 + IVA o dos pagos semestrales de $90,000 + IVA. Los pagos son anticipados al periodo cubierto, después de la garantía de 90 días. Las horas de atención se administran por mes (20/15, sin acumulación); los pagos del desarrollo no cambian.

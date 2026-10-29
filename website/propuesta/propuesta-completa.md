@@ -87,8 +87,9 @@ Emisión: **28 de octubre de 2026**. Vigencia: **30 días naturales a partir de 
 | Saldo antes de IVA | $1,540,000.00 | $910,000.00 |
 | Mensualidades del saldo | 12 | 6 |
 | Primera mensualidad | **60 días naturales después del anticipo** | **30 días naturales después del anticipo** |
-| Equivalente mensual de mantenimiento antes de IVA (facturación semestral o anual) | **$20,000 / hasta 20 horas** | **$15,000 / hasta 15 horas** |
-| Equivalente mensual con IVA | $23,200 | $17,400 |
+| Mantenimiento · un pago anual, antes de IVA | **$240,000** | **$180,000** |
+| Mantenimiento · dos pagos semestrales por año, antes de IVA | **2 de $120,000** | **2 de $90,000** |
+| Bolsa de atención por mes | Hasta 20 horas | Hasta 15 horas |
 
 ### Opción A · Plataforma completa
 
@@ -169,20 +170,20 @@ Se incluyen **30 días de estabilización** después del despliegue y **90 días
 
 | Membresía de mantenimiento de software | Opción A | Opción B |
 | --- | ---: | ---: |
-| Equivalente mensual antes de IVA | **$20,000** | **$15,000** |
-| Equivalente mensual con IVA | $23,200 | $17,400 |
+| Un pago anual antes de IVA | **$240,000** | **$180,000** |
+| Dos pagos semestrales por año antes de IVA | **2 de $120,000** | **2 de $90,000** |
 | Horas incluidas al mes | **Hasta 20 horas** | **Hasta 15 horas** |
 | Acumulación de horas | No acumulables | No acumulables |
 | Alcance | Plataforma completa y web contratadas | Funciones de la primera fase y web institucional de cortesía |
 
 ### Mantenimiento con pago anticipado semestral o anual
 
-Las cuotas mensuales anteriores son **valores de referencia**, no una modalidad de cobro mensual. El cliente elige pago anticipado de seis o doce meses, sin descuento adicional por periodicidad. El primer periodo comienza y se paga al concluir la garantía de 90 días; los siguientes se pagan antes del comienzo del periodo contratado. No se cobra esta membresía durante el desarrollo ni durante la garantía por defectos cubiertos.
+**Sólo hay dos modalidades de pago: un pago anual anticipado o dos pagos semestrales anticipados por cada año de servicio. No se ofrece cobro mensual.** No hay descuento adicional por periodicidad. El primer periodo comienza y se paga al concluir la garantía de 90 días; los siguientes se pagan antes del comienzo del periodo contratado. No se cobra esta membresía durante el desarrollo ni durante la garantía por defectos cubiertos.
 
 | Periodo | A antes de IVA | IVA A | A con IVA | B antes de IVA | IVA B | B con IVA |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Semestral · 6 meses | $120,000 | $19,200 | **$139,200** | $90,000 | $14,400 | **$104,400** |
-| Anual · 12 meses | $240,000 | $38,400 | **$278,400** | $180,000 | $28,800 | **$208,800** |
+| Cada pago semestral · dos por año | $120,000 | $19,200 | **$139,200** | $90,000 | $14,400 | **$104,400** |
+| Un pago anual · 12 meses | $240,000 | $38,400 | **$278,400** | $180,000 | $28,800 | **$208,800** |
 
 **La bolsa se administra mes a mes: A hasta 20 horas y B hasta 15 horas mensuales, sin acumulación.** El pago semestral o anual no permite concentrar todas las horas en un solo mes. La renovación, alcance y calendario se formalizarán por escrito. Infraestructura, administrador del servidor y consumos externos permanecen por separado.
 
@@ -224,7 +225,7 @@ Las dos soluciones se liberarán bajo el modelo **SaaS (Software as a Service, o
 
 La participación beta permite conocer y evaluar funcionalidades en desarrollo y aportar retroalimentación; no supone una fecha de liberación comprometida ni la disponibilidad de todas las funciones de una versión comercial.
 
-**Estos beneficios no reincorporan los módulos de Contabilidad ni de Recursos Humanos al alcance de desarrollo de cualquiera de las dos modalidades.** Las suscripciones SaaS y sus condiciones comerciales se contratarán por separado; no están incluidas en los importes de ninguna modalidad ni en las membresías de mantenimiento de la opción A ($20,000 + IVA) o B ($15,000 + IVA).
+**Estos beneficios no reincorporan los módulos de Contabilidad ni de Recursos Humanos al alcance de desarrollo de cualquiera de las dos modalidades.** Las suscripciones SaaS y sus condiciones comerciales se contratarán por separado; no están incluidas en los importes de ninguna modalidad ni en sus membresías de mantenimiento anual o semestral.
 
 ## 10. Formalización
 
