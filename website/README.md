@@ -164,3 +164,10 @@ B sustituye su precio anterior por $1,300,000 + IVA: anticipo $390,000 + IVA y s
 ## Mantenimiento: sólo pago anual o dos semestrales
 
 Se retiran todos los precios mensuales de mantenimiento de la cotización interactiva y del documento para PDF. A: un pago anual de $240,000 + IVA o dos pagos semestrales de $120,000 + IVA. B: un pago anual de $180,000 + IVA o dos pagos semestrales de $90,000 + IVA. Los pagos son anticipados al periodo cubierto, después de la garantía de 90 días. Las horas de atención se administran por mes (20/15, sin acumulación); los pagos del desarrollo no cambian.
+
+
+## Revisión vigente del 3 noviembre 2026
+
+Se retira la oferta de desarrollo completo anterior. Única propuesta: primera fase de $1,300,000 + IVA, 30% de anticipo y saldo en seis mensualidades desde D+30. Base provisional de 15 puestos: 11 sucursales y cuatro en CEDIS. Mantenimiento: $180,000 anual o dos pagos semestrales de $90,000 + IVA, con 15 horas por mes no acumulables e inicio tras garantía de 90 días. Promoción: SyborX absorbe el alojamiento de la plataforma durante la anualidad anticipada y vigente; no implica guardia humana 24/7 ni consumos externos ilimitados. Con pago semestral se cotiza alojamiento aparte.
+
+Los módulos del catálogo señalan incluido/parcial/pendiente; la ruta corresponde a la fase inicial de 20 a 24 semanas. La fase dos no tiene precio estimado y se cotizará sólo si se solicita. Pedidos web adicionales conservan propuesta de $240,000 + IVA sin pasarela. `propuesta/costos-operativos.pdf` es la guía de 13 páginas para cliente: supuestos, infraestructura, personal, equipos, recurrencias y responsabilidades. Sus rangos son reservas de planeación, no cotizaciones de proveedor ni servicios contratados.
