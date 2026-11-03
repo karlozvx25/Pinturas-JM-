@@ -9,6 +9,12 @@ Todo está integrado en **main**. La entrada principal es la web; el prototipo y
 | Cotización y diagramas | [Abrir propuesta](https://karlozvx25.github.io/Pinturas-JM-/propuesta/) | [`website/propuesta/`](website/propuesta/) |
 | Documento para PDF | [Abrir documento](https://karlozvx25.github.io/Pinturas-JM-/propuesta/propuesta-completa.html) | [`website/propuesta/propuesta-completa.html`](website/propuesta/propuesta-completa.html) |
 
+## Revisión de infraestructura · 3 de noviembre de 2026
+
+La [guía breve de alcance y continuidad](website/propuesta/costos-operativos.pdf) conserva la primera etapa funcional y la cobertura anual; agrega una reserva orientativa de $120,000 a $200,000 + IVA sólo para servidor empresarial, sujeta a dimensionamiento y cotización final. No incluye seguridad, energía, licencias, instalación, enlaces, personal ni continuidad 24/7. La alternativa de nube promocional permanece ligada a la anualidad anticipada y vigente.
+
+Preparar a la brevedad dominio a nombre de JM, DNS y accesos, correo, alojamiento, HTTPS y respaldo. El adicional propuesto de $240,000 + IVA sigue limitado a catálogo, carrito y pedidos conectados. La pasarela, integración y comisiones se seleccionan, cotizan y autorizan aparte antes de habilitar cobros; no son requisito para la web institucional ni la primera etapa operativa. No cambian precios ni planes de pago contratados.
+
 ## Inicio para el equipo
 
 ```bash
