@@ -46,7 +46,9 @@ La propuesta vigente es una primera fase acotada para controlar inventario y tra
 
 **Condición de operación de la fase inicial:** la venta, el igualado, la producción y la facturación siguen en el sistema o procedimiento actual. Antes del piloto se acordará cómo registrar sus efectos en inventario, quién los concilia y cuál es la fuente oficial por flujo. No se prometerán existencias al día si no se registran oportunamente las salidas; no se incluyen conectores automáticos al sistema anterior. Si el mecanismo manual o por plantilla no es viable, se deberá redefinir la transición antes de la aceptación, sin presumir una integración incluida.
 
-Al concluir la primera fase, se revisarán las prioridades del cliente y se cotizarán por separado únicamente los módulos adicionales que desee contratar. No hay obligación de contratar las fases pendientes. El precio de la primera fase no garantiza que completar el sistema después cueste únicamente la diferencia frente a ofertas anteriores. Se buscará reutilizar la base construida; no se volverán a cobrar componentes ya entregados sin una ampliación o cambio expresamente acordado.
+El canal de catálogo, carrito y pedidos conectados es la primera ampliación recomendada para expandir el alcance comercial. Su contratación es opcional. Al concluir la primera fase, se revisarán las prioridades del cliente y se cotizarán por separado únicamente los módulos adicionales que desee contratar. No hay obligación de contratar las fases pendientes. El precio de la primera fase no garantiza que completar el sistema después cueste únicamente la diferencia frente a ofertas anteriores. Se buscará reutilizar la base construida; no se volverán a cobrar componentes ya entregados sin una ampliación o cambio expresamente acordado.
+
+La primera etapa se entregará completa y operativa para los flujos contratados de inventario y traslados. Su aceptación no se condiciona a comprar módulos posteriores. Los controles obligatorios de lectura, autorización y recepción buscan reducir errores, pérdidas y oportunidades de sustracción; sus resultados se medirán, sin prometer porcentajes no comprobados.
 
 ### Definiciones técnicas que se cerrarán en el levantamiento
 
@@ -162,7 +164,7 @@ Primera respuesta crítica objetivo: cuatro horas hábiles en el horario acordad
 
 Por promoción, SyborX absorbe el alojamiento en nube de la plataforma contratada durante cada anualidad de mantenimiento pagada por adelantado y vigente. No exige comprar un servidor central local para esa plataforma. La promoción no aplica automáticamente al pago semestral, para el cual se definirá servidor propio o cotización de nube independiente.
 
-Antes de formalizar se describirán proveedor/región, capacidad, almacenamiento, respaldo, retención, accesos, administración, recuperación y tratamiento de excedentes. No se promete uso ilimitado ni cobertura humana 24/7. El ambiente durante desarrollo, estabilización y garantía debe acordarse por escrito antes de iniciar, sin presumir costos adicionales ni alojamiento gratuito fuera del periodo pactado.
+Para entregar el alcance contratado no se exigirá comprar la segunda etapa. Ampliaciones, excedentes y servicios extraordinarios requieren cotización y autorización previa; no se incorporan cargos automáticos por decisiones internas de implementación. Antes de formalizar se describirán proveedor/región, capacidad, almacenamiento, respaldo, retención, accesos, administración, recuperación y tratamiento de excedentes. No se promete uso ilimitado ni cobertura humana 24/7. El ambiente durante desarrollo, estabilización y garantía debe acordarse por escrito antes de iniciar, sin presumir costos adicionales ni alojamiento gratuito fuera del periodo pactado.
 
 Se excluyen de este beneficio equipos locales, internet, energía, dominio, correo, PAC/timbres, IA, mensajería, pasarelas y otros consumos externos. En renovación, cambio de modalidad o terminación se acordarán continuidad, exportación de datos y migración. Los nuevos módulos y servicios extraordinarios requieren anexo; no hay cargos automáticos no aprobados.
 
@@ -170,9 +172,9 @@ Se excluyen de este beneficio equipos locales, internet, energía, dominio, corr
 
 Debe comprar y administrar servidor, seguridad, respaldos, energía y conectividad. Un responsable interno o proveedor especializado atenderá actualizaciones, monitoreo, certificados, recuperación y fallas; esta operación no está incluida en las 15 horas de software. Para buscar continuidad 24/7 se dimensionan relevos o guardias, redundancia y objetivos RTO/RPO. Un firewall no elimina todo riesgo y una UPS tiene autonomía limitada.
 
-El documento complementario de costos distingue un servidor básico de una arquitectura con redundancia, planta y soporte continuo, e incluye reservas de planeación no vinculantes, equipos por sede y gastos recurrentes. No es una orden de compra ni precio de proveedor. Las compras se validarán con carga, sitio, licencias y propuestas vigentes.
+La guía complementaria explica las responsabilidades de operar un servidor propio, sin precios ni presupuestos de equipos. El alojamiento promocional permite evaluar una alternativa sin comprar ese servidor central; las sedes conservan sus equipos y servicios locales. Su condición se revisará antes de formalizar para identificar qué puede reutilizarse.
 
-Documento complementario: costos-operativos.pdf, disponible desde la propuesta interactiva.
+Guía breve de alcance, valor y continuidad: costos-operativos.pdf, disponible desde la propuesta interactiva. Explica la funcionalidad inicial, cobertura anual, responsabilidades del servidor propio y ampliaciones opcionales; no incluye presupuestos de compra de equipos.
 
 ## 9. Acceso preferencial al ecosistema SaaS de SyborX
 
