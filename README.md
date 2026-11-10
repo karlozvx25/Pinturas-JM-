@@ -9,6 +9,12 @@ Todo está integrado en **main**. La entrada principal es la web; el prototipo y
 | Cotización y diagramas | [Abrir propuesta](https://karlozvx25.github.io/Pinturas-JM-/propuesta/) | [`website/propuesta/`](website/propuesta/) |
 | Documento para PDF | [Abrir documento](https://karlozvx25.github.io/Pinturas-JM-/propuesta/propuesta-completa.html) | [`website/propuesta/propuesta-completa.html`](website/propuesta/propuesta-completa.html) |
 
+## Prototipo adicional · primera fase de $1.3 M + IVA
+
+El [prototipo de primera fase](https://karlozvx25.github.io/Pinturas-JM-/propuesta/fase-inicial/) se abre desde el hero y la sección de inversión de la cotización. La visión ampliada original se conserva. El nuevo frontend representa sólo inventario y traslados, con códigos, recepción, reservas, surtido, recepción ciega/parcial, incidencias, conteos autorizados, salidas de transición y bitácora. Su vista Alcance y evolución delimita los módulos aplazados.
+
+Código y [manual del escenario](website/propuesta/fase-inicial/README.md) en `website/propuesta/fase-inicial/`. Pruebas: `npm run phase:test`; sintaxis: `npm run phase:check`. `web:check` incluye ambas para la publicación. Es una demo local con datos ficticios y perfiles simulados; no es backend ni habilita integraciones productivas. No cambian precios, pagos ni vigencia de la cotización.
+
 ## Cotización aprobada · 3 de noviembre de 2026
 
 La cotización conserva las condiciones aprobadas. Se retiró de su interfaz y versión imprimible el enlace a la guía complementaria, que se enviará por separado. El archivo [de alcance y continuidad](website/propuesta/costos-operativos.pdf) se conserva independiente para el equipo; conserva la primera etapa funcional y la cobertura anual; agrega una reserva orientativa de $120,000 a $200,000 + IVA sólo para servidor empresarial, sujeta a dimensionamiento y cotización final. No incluye seguridad, energía, licencias, instalación, enlaces, personal ni continuidad 24/7. La alternativa de nube promocional permanece ligada a la anualidad anticipada y vigente.
