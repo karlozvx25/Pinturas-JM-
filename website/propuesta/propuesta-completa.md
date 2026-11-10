@@ -56,6 +56,10 @@ Se documentarán los volúmenes reales de las presentaciones, unidades de pigmen
 
 La operación offline se refiere al POS y a los flujos expresamente definidos. La autorización de tarjeta o transferencia depende de los servicios bancarios; el timbrado fiscal se realizará con conexión. Se establecerán límites de autonomía y políticas de conflicto antes de las pruebas de aceptación.
 
+### Prototipo adicional de la primera fase
+
+La cotización incorpora un acceso al prototipo de $1,300,000 + IVA: inventario y códigos, recepción CEDIS, solicitudes y traslados, conteos, salidas de transición y bitácora. La vista Alcance y evolución identifica las ampliaciones pendientes. Es una demostración con datos ficticios y almacenamiento local; no sustituye el desarrollo productivo, la validación del alcance ni sus pruebas de aceptación. La visión ampliada del prototipo original se conserva como referencia de evolución.
+
 ### 2.2. Web institucional de cortesía y pedidos opcionales
 
 La web institucional se entrega sin cargo adicional de desarrollo: diseño adaptable, presentación de Pinturas JM, líneas de producto, contacto y acceso al portal contratado. No incluye dominio, correo, contenidos ilimitados ni campañas. El alojamiento de la plataforma se rige por la promoción de la sección 8; cualquier hospedaje externo independiente de la web se definirá por separado.
